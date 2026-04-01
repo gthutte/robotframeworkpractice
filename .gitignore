@@ -1,24 +1,18 @@
-# Compiled class file
-*.class
+# created by virtualenv automatically
+*
+.venv/
+# Ignore PyCharm project settings
+.idea/
 
-# Log file
-*.log
+# Ignore compiled Python files
+__pycache__/
+*.pyc
 
-# BlueJ files
-*.ctxt
+# Ignore Selenium screenshots
+selenium-screenshot-*.png
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Robot Framework generated files
+output.xml
+report.html
+log.html
+Results/
