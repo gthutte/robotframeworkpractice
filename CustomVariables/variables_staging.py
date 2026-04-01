@@ -1,0 +1,5 @@
+APP_URL = "https://staging.arrayviewpoint.fellowes.com/login/"
+CORRECT_EMAIL = "e-sdhepale@fellowes.com"
+CORRECT_PASSWORD = "Onward@2023"
+EXPECTED_URL = "https://staging.arrayviewpoint.fellowes.com/login/"
+TEST_BROWSER = "chrome"
