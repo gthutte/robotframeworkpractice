@@ -21,7 +21,8 @@ metrics_pm1_0_parameter="xpath://*[@data-testid='pm-1.0-chart-option']"
 metrics_pm10_parameter="xpath://*[@data-testid='pm-10-chart-option']"
 metrics_air_pressure_parameter="xpath://*[@data-testid='air-pressure-chart-option']"
 metrics_occupancy_parameter="xpath://*[@data-testid='occupancy-chart-option']"
-btn_close_how_is_my_air_quality_calculate_drawer= "//button[contains (@class,'Drawersstyles__StyledCloseButton')]"
+# btn_close_how_is_my_air_quality_calculate_drawer= "//button[contains (@class,'Drawersstyles__StyledCloseButton')]"
+btn_close_how_is_my_air_quality_calculate_drawer= "xpath://*[@data-testid='close']"
 
 METRIC_LOCATORS = {
     "Air Quality": metrics_air_quality_parameter,

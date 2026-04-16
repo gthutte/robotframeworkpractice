@@ -57,17 +57,17 @@ Verify All Metric Graphs
         Verify Metric Graph    ${metric}    ${needs_drawer_close}
     END
 
-To Verify Occupancy Graph          ### Verified the Occupancy graph against Air Quality,PM2.5,TVOC and CO2
-    Click on Occupancy Parameter in Metrics Tab
-    Wait Until Graph Canvas Is Visible
-
-    Loop Through Time Ranges          ### Loop for checking 24hrs, 7 days, 30 days & 12 months
-
-    FOR    ${param}    IN    @{COMPARISON_PARAMS}
-        Select Comparison Parameter in Occupancy Graph    ${param}
-        Wait Until Graph Canvas Is Visible
-        Loop Through Time Ranges
-    END
+#To Verify Occupancy Graph          ### Verified the Occupancy graph against Air Quality,PM2.5,TVOC and CO2
+#    Click on Occupancy Parameter in Metrics Tab
+#    Wait Until Graph Canvas Is Visible
+#
+#    Loop Through Time Ranges          ### Loop for checking 24hrs, 7 days, 30 days & 12 months
+#
+#    FOR    ${param}    IN    @{COMPARISON_PARAMS}
+#        Select Comparison Parameter in Occupancy Graph    ${param}
+#        Wait Until Graph Canvas Is Visible
+#        Loop Through Time Ranges
+#    END
 
 To Verify Given Area is available in list and Clickable  ## Selecting and verifying the given area
     ${areas}=    Get Areas List

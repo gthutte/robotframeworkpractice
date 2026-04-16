@@ -2,7 +2,7 @@
 
 ##Fellowes Logo on nav bar
 fellowes_logo="//img[@alt='Fellowes logo']"
-drp_building_selection="xpath://div[@data-testid='building-picker']"
+drp_building_selection="xpath://*[@data-testid='arrow_down']"
 option_building_selection="xpath://div[@data-testid='building-option' and text()='${Building_to_be_select}']"
 dashboard_page="link=Dashboard"
 areas_page="link=Areas"

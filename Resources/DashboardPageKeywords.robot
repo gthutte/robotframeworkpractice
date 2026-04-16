@@ -32,20 +32,29 @@ isCurrentAirQualityStatusVisible
 
 isPM25TitleVisible
     [Arguments]     ${title_pm25}
-    ${pm_25_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_pm25}')]
+    ${pm_25_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle'))]//div[text()='${title_pm25}']
     Element Should Be Visible    ${pm_25_metric_summary_title}
 
 isTVOCTitleVisible
     [Arguments]     ${title_tvoc}
-    ${tvoc_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_tvoc}')]
+    ${tvoc_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle'))]//div[text()='${title_tvoc}']
     Element Should Be Visible    ${tvoc_metric_summary_title}
 
 isCO2TitleVisible
     [Arguments]     ${title_CO2}
-    ${CO2_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_CO2}')]
+    ${CO2_metric_summary_title}=    Set Variable    xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle'))]//div[text()='${title_CO2}']
     Element Should Be Visible    ${CO2_metric_summary_title}
 
 isHistoryTitleVisible
     [Arguments]     ${title_history}
-    ${history_title}=    Set Variable    xpath://*[(contains(@class,'Chartsstyles__StyledHeader') and text()='${title_history}')]
+    ${history_title}=    Set Variable    xpath://*[(contains(@class,'Chartsstyles__StyledTitleContainer'))]//div[text()='History']
     Element Should Be Visible    ${history_title}
+
+isReplaceNowSectionVisible
+    Element Should be Visible    ${replace_now_section}
+    
+isReplaceSoonSectionVisible
+    Element Should be Visible    ${replace_soon_section}
+    
+isDeviceOfflineSectionVisible
+    Element Should be Visible    ${device_offline_section}

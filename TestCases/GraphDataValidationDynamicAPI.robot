@@ -28,7 +28,7 @@ Validate Dynamic Sensor Data On Graph
 
 *** Keywords ***
 Login To Application
-    Open Browser    ${API_BASE_URL}    ${BROWSER}
+    Open Browser    ${API_BASE_URL}    ${TEST_BROWSER}
     BuiltIn.sleep   5
     input text      xpath://*[@data-testid="email-input"]    ${USERNAME}
     input text      xpath://*[@data-testid="password-input"]    ${PASSWORD}

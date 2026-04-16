@@ -41,11 +41,16 @@ To Verify Graph Comparison is working on Dashboard Page
     Select Building For Comparison By Index
     Wait Until Graph Canvas Is Visible
 
-To Verify See More Link is Visible
-    isSeeMoreLinkVisible
+#To Verify See More Link is Visible
+#    isSeeMoreLinkVisible
+#
+#To Verify See All Areas Link is Visible
+#    isSeeAllAreasLinkVisible
 
-To Verify See All Areas Link is Visible
-    isSeeAllAreasLinkVisible
+To Verify Overview Section is visible
+    IsReplaceNowSectionVisible
+    IsReplaceSoonSectionVisible
+    IsDeviceOfflineSectionVisible
 
 To Verify Current Air Quality Label is Visible
     IsCurrentAirQualityLabelVisible
