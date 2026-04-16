@@ -16,3 +16,7 @@ output.xml
 report.html
 log.html
 Results/
+
+# Ignore environment variable files
+.env.qa
+.env.*

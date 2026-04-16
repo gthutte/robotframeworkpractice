@@ -1,21 +1,22 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables   ${ENV_FILE}
+#Variables   ${ENV_FILE}
 Resource   ../Resources/AdminLoginKeywords.robot
 
 *** Variables ***
-${TEST_BROWSER}    chrome
-${APP_URL}     https://otl-qa.arrayviewpoint.fellowes.com/admin/login/
-${CORRECT_EMAIL}    rohan_kadu@onwardgroup.com
-${CORRECT_PASSWORD}    0}Av|55#N27=
+#${TEST_BROWSER}    chrome
+#${APP_URL}     https://otl-qa.arrayviewpoint.fellowes.com/admin/login/
+#${CORRECT_EMAIL}    rohan_kadu@onwardgroup.com
+#${CORRECT_PASSWORD}    0}Av|55#N27=
 ${EXPECTED_SUCCESS_MESSAGE}  The organization was successfully updated
 ${ACTIVE_USERS}     Active Users
-${EXPECTED_URL}    https://otl-qa.arrayviewpoint.fellowes.com/admin/
+#${EXPECTED_URL}    https://otl-qa.arrayviewpoint.fellowes.com/admin/
 ${page_title}   Admin Dashboard
 
 
 *** Test Cases ***
 To Verify Successfull Login
+    Load .env Variables
     Open My Browser     ${APP_URL}  ${TEST_BROWSER}
     Wait For Overlay To Disappear
     Enter Username      ${CORRECT_EMAIL}

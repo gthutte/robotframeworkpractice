@@ -9,10 +9,20 @@ RESULTS_DIR=Results
 clean:
 	rm -rf $(RESULTS_DIR)
 
+#test-qa:
+#	mkdir -p $(RESULTS_DIR)
+#	PYTHONPATH=. robot --variable ENV_FILE:CustomVariables.variables_qa --outputdir $(RESULTS_DIR) TestCases/*.robot
+#
+#test-staging:
+#	mkdir -p $(RESULTS_DIR)
+#	PYTHONPATH=. robot --variable ENV_FILE:CustomVariables.variables_staging --outputdir $(RESULTS_DIR) TestCases/*.robot
+
 test-qa:
+	cp .env.qa .env
 	mkdir -p $(RESULTS_DIR)
-	PYTHONPATH=. robot --variable ENV_FILE:CustomVariables.variables_qa --outputdir $(RESULTS_DIR) TestCases/*.robot
+	PYTHONPATH=. robot --outputdir $(RESULTS_DIR) TestCases/*.robot
 
 test-staging:
+	cp .env.staging .env
 	mkdir -p $(RESULTS_DIR)
-	PYTHONPATH=. robot --variable ENV_FILE:CustomVariables.variables_staging --outputdir $(RESULTS_DIR) TestCases/*.robot
+	PYTHONPATH=. robot --outputdir $(RESULTS_DIR) TestCases/*.robot

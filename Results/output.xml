@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <robot generator="Robot 6.1.1 (Python 3.7.7 on linux)" generated="20260403 15:38:52.796" rpa="false" schemaversion="4">
 <suite id="s1" name="AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI">
 <suite id="s1-s1" name="AdminLoginTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AdminLoginTest.robot">
@@ -203,11 +204,1037 @@
 <statistics>
 <total>
 <stat pass="0" fail="27" skip="0">All Tests</stat>
+=======
+<robot generator="Robot 7.3.2 (Python 3.12.5 on linux)" generated="2026-04-09T17:58:41.434037" rpa="false" schemaversion="5">
+<suite id="s1" name="AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI">
+<suite id="s1-s1" name="AdminLoginTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AdminLoginTest.robot">
+<test id="s1-s1-t1" name="To Verify Successfull Login" line="18">
+<kw name="Load .env Variables" owner="AdminLoginKeywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.638971" level="FAIL">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</msg>
+<var>${dotenv}</var>
+<arg>__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.638368" elapsed="0.000740">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${None}</var>
+<arg>${dotenv}.set_env_variables_as_robot_variables()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.639222" elapsed="0.000022"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.637886" elapsed="0.001446">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Open My Browser" owner="AdminLoginKeywords">
+<arg>${APP_URL}</arg>
+<arg>${TEST_BROWSER}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.639507" elapsed="0.000027"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.639670" elapsed="0.000035"/>
+</kw>
+<kw name="Enter Username" owner="AdminLoginKeywords">
+<arg>${CORRECT_EMAIL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.639841" elapsed="0.000027"/>
+</kw>
+<kw name="Enter Password" owner="AdminLoginKeywords">
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.639984" elapsed="0.000023"/>
+</kw>
+<kw name="Click Login Button" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.640126" elapsed="0.000024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.640252" elapsed="0.000026"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.640402" elapsed="0.000045"/>
+</kw>
+<kw name="isCurrentUrlCorrect" owner="AdminLoginKeywords">
+<arg>${EXPECTED_URL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.640556" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.637304" elapsed="0.003485">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</test>
+<test id="s1-s1-t2" name="To Verify Subscription Plan Changes Successfully" line="30">
+<kw name="Wait For Overlay To Disappear" owner="AdminLoginKeywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.641857" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.641921" level="FAIL">No browser is open.</msg>
+<arg>${overlay}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.641377" elapsed="0.001264">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.641187" elapsed="0.001543">No browser is open.</status>
+</kw>
+<kw name="Click Change Subscription Button" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.642862" elapsed="0.000025"/>
+</kw>
+<kw name="Click Subscription Plan Dropdown" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.642980" elapsed="0.000021"/>
+</kw>
+<kw name="Select Subscription Plan From Dropdown" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.643094" elapsed="0.000021"/>
+</kw>
+<kw name="Click Confirm Button" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.643205" elapsed="0.000023"/>
+</kw>
+<kw name="Wait For Toaster Message to be Visible" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.643322" elapsed="0.000021"/>
+</kw>
+<kw name="isToasterMessageCorrect" owner="AdminLoginKeywords">
+<arg>${EXPECTED_SUCCESS_MESSAGE}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.643455" elapsed="0.000034"/>
+</kw>
+<kw name="Wait For Toaster Message to be Disappear" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.643605" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.640959" elapsed="0.002802">No browser is open.</status>
+</test>
+<test id="s1-s1-t3" name="To Verify Devices Tab is loaded Successfully" line="40">
+<kw name="Click Devices tab" owner="AdminLoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.644494" level="INFO">Clicking element 'xpath://*[@data-testid='devices-tab']'.</msg>
+<msg time="2026-04-09T17:58:41.644551" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.644605" level="FAIL">No browser is open.</msg>
+<arg>${tab_devices}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.644345" elapsed="0.000797">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.644174" elapsed="0.001066">No browser is open.</status>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.645388" elapsed="0.000028"/>
+</kw>
+<kw name="isDevicesListPresent" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.645563" elapsed="0.000021"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.643948" elapsed="0.001742">No browser is open.</status>
+</test>
+<test id="s1-s1-t4" name="To Verify Users Tab is loaded Successfully" line="45">
+<kw name="Click Users tab" owner="AdminLoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.646501" level="INFO">Clicking element 'xpath://*[@data-testid='users-tab']'.</msg>
+<msg time="2026-04-09T17:58:41.646577" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.646651" level="FAIL">No browser is open.</msg>
+<arg>${tab_users}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.646267" elapsed="0.000761">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.646025" elapsed="0.001094">No browser is open.</status>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.647271" elapsed="0.000035"/>
+</kw>
+<kw name="isActiveUsersLabelVisible" owner="AdminLoginKeywords">
+<arg>${ACTIVE_USERS}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.647458" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.645824" elapsed="0.001790">No browser is open.</status>
+</test>
+<test id="s1-s1-t5" name="To Verify User Logged Out Successfully" line="50">
+<kw name="Click Admin Account Menu Dropdown" owner="AdminLoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.648353" level="INFO">Clicking element 'xpath://*[@data-testid='account-menu']'.</msg>
+<msg time="2026-04-09T17:58:41.648446" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.648505" level="FAIL">No browser is open.</msg>
+<arg>${admin_account_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.648204" elapsed="0.000793">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.648032" elapsed="0.001053">No browser is open.</status>
+</kw>
+<kw name="Click Admin Sign Out Option" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.649210" elapsed="0.000025"/>
+</kw>
+<kw name="isCurrentUrlCorrect" owner="AdminLoginKeywords">
+<arg>${APP_URL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.649344" elapsed="0.000023"/>
+</kw>
+<kw name="Close My Browser" owner="AdminLoginKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.649460" elapsed="0.000019"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.647772" elapsed="0.001820">No browser is open.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:41.448578" elapsed="0.201306"/>
+</suite>
+<suite id="s1-s2" name="AreasPageTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot">
+<test id="s1-s2-t1" name="To Verify Successfull Login" line="33">
+<kw name="Open My Browser" owner="LoginPageKeywords">
+<msg time="2026-04-09T17:58:41.669072" level="FAIL">Variable '${APP_URL}' not found.</msg>
+<arg>${APP_URL}</arg>
+<arg>${TEST_BROWSER}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.667607" elapsed="0.001734">Variable '${APP_URL}' not found.</status>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.669923" elapsed="0.000061"/>
+</kw>
+<kw name="Enter Username" owner="LoginPageKeywords">
+<arg>${CORRECT_EMAIL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.670113" elapsed="0.000030"/>
+</kw>
+<kw name="Enter Password" owner="LoginPageKeywords">
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.670301" elapsed="0.000050"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.670497" elapsed="0.000024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.670655" elapsed="0.000027"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.670790" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.667053" elapsed="0.003878">Variable '${APP_URL}' not found.</status>
+</test>
+<test id="s1-s2-t2" name="To Verify Areas page is clickable and visible" line="42">
+<kw name="Click on Areas Page" owner="ViewpointNavigationBarKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.671855" level="INFO">Clicking element 'link=Areas'.</msg>
+<msg time="2026-04-09T17:58:41.671902" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.671955" level="FAIL">No browser is open.</msg>
+<arg>${areas_page}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.671698" elapsed="0.000618">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.671343" elapsed="0.001071">No browser is open.</status>
+</kw>
+<kw name="isAreasSidebarTitleVisible" owner="AreasPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.672548" elapsed="0.000029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.672669" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.671077" elapsed="0.001715">No browser is open.</status>
+</test>
+<test id="s1-s2-t3" name="To Verify Graph Comparison is working on Areas Page" line="47">
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.673600" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.673660" level="FAIL">No browser is open.</msg>
+<arg>${graph_canvas}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.673413" elapsed="0.000624">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.673228" elapsed="0.000890">No browser is open.</status>
+</kw>
+<kw name="scrollDownPage" owner="AreasPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.674238" elapsed="0.000023"/>
+</kw>
+<kw name="Click on Graph Comparison Dropdown" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.674374" elapsed="0.000027"/>
+</kw>
+<kw name="Select Building For Comparison By Index" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.674488" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.674611" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.672945" elapsed="0.001819">No browser is open.</status>
+</test>
+<test id="s1-s2-t4" name="Verify All Metric Graphs" line="55">
+<for flavor="IN">
+<iter>
+<kw name="Verify Metric Graph" owner="AreasPageKeywords">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Click On Metric Parameter" owner="AreasPageKeywords">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-04-09T17:58:41.676069" level="INFO">${locator} = xpath://*[@data-testid='air-quality-chart-option' and contains(@class, 'ChartOptionstyles__StyledChartOption')]</msg>
+<var>${locator}</var>
+<arg>${METRIC_LOCATORS}</arg>
+<arg>${metric_name}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.675934" elapsed="0.000158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.676291" level="INFO">Clicking element 'xpath://*[@data-testid='air-quality-chart-option' and contains(@class, 'ChartOptionstyles__StyledChartOption')]'.</msg>
+<msg time="2026-04-09T17:58:41.676339" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.676391" level="FAIL">No browser is open.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.676172" elapsed="0.000552">No browser is open.</status>
+</kw>
+<arg>${metric_name}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.675767" elapsed="0.001037">No browser is open.</status>
+</kw>
+<arg>Click On Metric Parameter</arg>
+<arg>${metric_name}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.675638" elapsed="0.001210">No browser is open.</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${close_drawer}'=='${TRUE}'</arg>
+<arg>Click on Close button of How is my Air Quality Calculated Drawer</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.676949" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.677061" elapsed="0.000021"/>
+</kw>
+<kw name="Loop Through Time Ranges" owner="AreasPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.677178" elapsed="0.000026"/>
+</kw>
+<arg>${metric}</arg>
+<arg>${needs_drawer_close}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.675386" elapsed="0.001873">No browser is open.</status>
+</kw>
+<var name="${metric}">Air Quality</var>
+<var name="${needs_drawer_close}">True</var>
+<status status="FAIL" start="2026-04-09T17:58:41.675273" elapsed="0.002030">No browser is open.</status>
+</iter>
+<var>${metric}</var>
+<var>${needs_drawer_close}</var>
+<value>@{METRICS_TO_VERIFY}</value>
+<status status="FAIL" start="2026-04-09T17:58:41.675118" elapsed="0.002298">No browser is open.</status>
+</for>
+<status status="FAIL" start="2026-04-09T17:58:41.674939" elapsed="0.002618">No browser is open.</status>
+</test>
+<test id="s1-s2-t5" name="To Verify Occupancy Graph" line="60">
+<kw name="Click on Occupancy Parameter in Metrics Tab" owner="AreasPageKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.678423" level="INFO">Clicking element 'xpath://*[@data-testid='occupancy-chart-option']'.</msg>
+<msg time="2026-04-09T17:58:41.678463" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.678510" level="FAIL">No browser is open.</msg>
+<arg>${metrics_occupancy_parameter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.678278" elapsed="0.000552">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.678105" elapsed="0.000806">No browser is open.</status>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.679052" elapsed="0.000032"/>
+</kw>
+<kw name="Loop Through Time Ranges" owner="AreasPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.679227" elapsed="0.000025"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Select Comparison Parameter in Occupancy Graph" owner="AreasPageKeywords">
+<arg>${param}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.679479" elapsed="0.000021"/>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.679573" elapsed="0.000019"/>
+</kw>
+<kw name="Loop Through Time Ranges" owner="AreasPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.679671" elapsed="0.000019"/>
+</kw>
+<var name="${param}"/>
+<status status="NOT RUN" start="2026-04-09T17:58:41.679386" elapsed="0.000325"/>
+</iter>
+<var>${param}</var>
+<value>@{COMPARISON_PARAMS}</value>
+<status status="NOT RUN" start="2026-04-09T17:58:41.679313" elapsed="0.000430"/>
+</for>
+<status status="FAIL" start="2026-04-09T17:58:41.677699" elapsed="0.002169">No browser is open.</status>
+</test>
+<test id="s1-s2-t6" name="To Verify Given Area is available in list and Clickable" line="72">
+<kw name="Get Areas List" owner="AreasPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.680716" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.680770" level="FAIL">No browser is open.</msg>
+<arg>${list_areas_name}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.680509" elapsed="0.000653">No browser is open.</status>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<var>${elements}</var>
+<arg>${list_areas_name}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681259" elapsed="0.000023"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>${areas}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681356" elapsed="0.000018"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${text}</var>
+<arg>${el}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681525" elapsed="0.000019"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${areas}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681604" elapsed="0.000017"/>
+</kw>
+<var name="${el}"/>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681465" elapsed="0.000182"/>
+</iter>
+<var>${el}</var>
+<value>@{elements}</value>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681410" elapsed="0.000264"/>
+</for>
+<return>
+<value>${areas}</value>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681713" elapsed="0.000022"/>
+</return>
+<var>${areas}</var>
+<status status="FAIL" start="2026-04-09T17:58:41.680346" elapsed="0.001454">No browser is open.</status>
+</kw>
+<kw name="Click on Given Area" owner="AreasPageKeywords">
+<arg>${area_to_select}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.681944" elapsed="0.000025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.682061" elapsed="0.000018"/>
+</kw>
+<kw name="Close My Browser" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.682174" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.680051" elapsed="0.002244">No browser is open.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:41.650309" elapsed="0.032234"/>
+</suite>
+<suite id="s1-s3" name="CommunityDashboardTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot">
+<test id="s1-s3-t1" name="To Verify Successfull Login" line="25">
+<kw name="Open My Browser" owner="LoginPageKeywords">
+<msg time="2026-04-09T17:58:41.691215" level="FAIL">Variable '${APP_URL}' not found.</msg>
+<arg>${APP_URL}</arg>
+<arg>${TEST_BROWSER}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.690691" elapsed="0.000558">Variable '${APP_URL}' not found.</status>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.691405" elapsed="0.000026"/>
+</kw>
+<kw name="Enter Username" owner="LoginPageKeywords">
+<arg>${CORRECT_EMAIL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.691532" elapsed="0.000021"/>
+</kw>
+<kw name="Enter Password" owner="LoginPageKeywords">
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.691678" elapsed="0.000027"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.691818" elapsed="0.000023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.691951" elapsed="0.000025"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.692094" elapsed="0.000023"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.692216" elapsed="0.000021"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginPageKeywords">
+<arg>${page_title}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.692339" elapsed="0.000021"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.690276" elapsed="0.002208">Variable '${APP_URL}' not found.</status>
+</test>
+<test id="s1-s3-t2" name="To Verify Community Dashboard is Selected from Account Menu" line="36">
+<kw name="Click on Account Menu" owner="ViewpointNavigationBarKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.693155" level="INFO">Clicking element 'xpath://div[@data-testid='account-menu']'.</msg>
+<msg time="2026-04-09T17:58:41.693198" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.693247" level="FAIL">No browser is open.</msg>
+<arg>${user_account_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.693009" elapsed="0.000594">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.692843" elapsed="0.000844">No browser is open.</status>
+</kw>
+<kw name="Select Community Dashboard from Account Menu" owner="ViewpointNavigationBarKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.693807" elapsed="0.000066"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.694126" elapsed="0.000029"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.694284" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.692628" elapsed="0.001813">No browser is open.</status>
+</test>
+<test id="s1-s3-t3" name="To Verify Location is selected successfully" line="42">
+<kw name="Click on Select Building Dropdown" owner="CommunityDashboardKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.695157" level="INFO">Clicking element 'id:building-select-search'.</msg>
+<msg time="2026-04-09T17:58:41.695198" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.695247" level="FAIL">No browser is open.</msg>
+<arg>${drp_select_building}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.695020" elapsed="0.000568">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.694861" elapsed="0.000808">No browser is open.</status>
+</kw>
+<kw name="Select Building from Dropdown" owner="CommunityDashboardKeywords">
+<arg>${building_to_select}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.695799" elapsed="0.000025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.695917" elapsed="0.000021"/>
+</kw>
+<kw name="Click on Select Floor Dropdown" owner="CommunityDashboardKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.696037" elapsed="0.000020"/>
+</kw>
+<kw name="Select Floor from Dropdown" owner="CommunityDashboardKeywords">
+<arg>${floor_to_select}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.696161" elapsed="0.000023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.696284" elapsed="0.000023"/>
+</kw>
+<kw name="Click on Select Area Dropdown" owner="CommunityDashboardKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.696422" elapsed="0.000022"/>
+</kw>
+<kw name="Select Area from Dropdown" owner="CommunityDashboardKeywords">
+<arg>${area_to_select}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.696533" elapsed="0.000020"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.696639" elapsed="0.000019"/>
+</kw>
+<kw name="Close My Browser" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.696773" elapsed="0.000022"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.694608" elapsed="0.002298">No browser is open.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:41.683063" elapsed="0.014071"/>
+</suite>
+<suite id="s1-s4" name="DashboardPageTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot">
+<test id="s1-s4-t1" name="To Verify Successfull Login" line="24">
+<kw name="Load .env Variables" owner="LoginPageKeywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.701754" level="FAIL">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</msg>
+<var>${dotenv}</var>
+<arg>__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.701555" elapsed="0.000292">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${None}</var>
+<arg>${dotenv}.set_env_variables_as_robot_variables()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.701954" elapsed="0.000022"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.701357" elapsed="0.000691">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Open My Browser" owner="LoginPageKeywords">
+<arg>${APP_URL}</arg>
+<arg>${TEST_BROWSER}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.702186" elapsed="0.000025"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.702315" elapsed="0.000028"/>
+</kw>
+<kw name="Enter Username" owner="LoginPageKeywords">
+<arg>${CORRECT_EMAIL}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.702439" elapsed="0.000026"/>
+</kw>
+<kw name="Enter Password" owner="LoginPageKeywords">
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.702574" elapsed="0.000029"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.702708" elapsed="0.000022"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.702823" elapsed="0.000028"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.702943" elapsed="0.000019"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.703043" elapsed="0.000023"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginPageKeywords">
+<arg>${page_title}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.703187" elapsed="0.000028"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.700876" elapsed="0.002482">Evaluating expression "__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()" failed: TypeError: 'module' object is not callable</status>
+</test>
+<test id="s1-s4-t2" name="To Verify Graph Comparison is working on Dashboard Page" line="36">
+<kw name="Click on Dashboard Page" owner="ViewpointNavigationBarKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.704060" level="INFO">Clicking element 'link=Dashboard'.</msg>
+<msg time="2026-04-09T17:58:41.704105" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.704156" level="FAIL">No browser is open.</msg>
+<arg>${dashboard_page}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.703917" elapsed="0.000616">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.703750" elapsed="0.000878">No browser is open.</status>
+</kw>
+<kw name="Click on Building Selection Dropdown" owner="ViewpointNavigationBarKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.704787" elapsed="0.000037"/>
+</kw>
+<kw name="Select Given building from Building Dropdown" owner="ViewpointNavigationBarKeywords">
+<arg>${building_to_select}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:41.704947" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.705088" elapsed="0.000023"/>
+</kw>
+<kw name="Click on Graph Comparison Dropdown" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.705222" elapsed="0.000020"/>
+</kw>
+<kw name="Select Building For Comparison By Index" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.705342" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Graph Canvas Is Visible" owner="DashboardPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.705483" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.703501" elapsed="0.002232">No browser is open.</status>
+</test>
+<test id="s1-s4-t3" name="To Verify See More Link is Visible" line="45">
+<kw name="isSeeMoreLinkVisible" owner="DashboardPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.706533" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.706595" level="FAIL">No browser is open.</msg>
+<arg>${see_more_link}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.706283" elapsed="0.000726">No browser is open.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${see_more_link}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:41.707140" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.706115" elapsed="0.001125">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.705901" elapsed="0.001530">No browser is open.</status>
+</test>
+<test id="s1-s4-t4" name="To Verify See All Areas Link is Visible" line="48">
+<kw name="isSeeAllAreasLinkVisible" owner="DashboardPageKeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.708610" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.708672" level="FAIL">No browser is open.</msg>
+<arg>${see_all_areas_link}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.708442" elapsed="0.000569">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.708213" elapsed="0.000885">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.707649" elapsed="0.001567">No browser is open.</status>
+</test>
+<test id="s1-s4-t5" name="To Verify Current Air Quality Label is Visible" line="51">
+<kw name="isCurrentAirQualityLabelVisible" owner="DashboardPageKeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.709940" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.709993" level="FAIL">No browser is open.</msg>
+<arg>${lbl_current_air_quality_index}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.709792" elapsed="0.000506">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.709628" elapsed="0.000759">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.709367" elapsed="0.001137">No browser is open.</status>
+</test>
+<test id="s1-s4-t6" name="To Verify Current Air Quality Value is Visible" line="54">
+<kw name="isCurrentAirQualityValueVisible" owner="DashboardPageKeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.711230" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.711280" level="FAIL">No browser is open.</msg>
+<arg>${current_air_quality_index_value}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.711086" elapsed="0.000523">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.710927" elapsed="0.000761">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.710667" elapsed="0.001134">No browser is open.</status>
+</test>
+<test id="s1-s4-t7" name="To Verify Current Air Quality Status is Visible" line="57">
+<kw name="isCurrentAirQualityStatusVisible" owner="DashboardPageKeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.712493" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.712546" level="FAIL">No browser is open.</msg>
+<arg>${current_air_quality_index_status}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.712343" elapsed="0.000496">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.712177" elapsed="0.000736">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.711935" elapsed="0.001090">No browser is open.</status>
+</test>
+<test id="s1-s4-t8" name="To Verify PM2.5 Title is Visible" line="60">
+<kw name="isPM25TitleVisible" owner="DashboardPageKeywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.713783" level="INFO">${pm_25_metric_summary_title} = xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='PM 2.5')]</msg>
+<var>${pm_25_metric_summary_title}</var>
+<arg>xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_pm25}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.713636" elapsed="0.000170"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.714137" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.714193" level="FAIL">No browser is open.</msg>
+<arg>${pm_25_metric_summary_title}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.713882" elapsed="0.000616">No browser is open.</status>
+</kw>
+<arg>${pm25_title}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.713451" elapsed="0.001127">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.713214" elapsed="0.001487">No browser is open.</status>
+</test>
+<test id="s1-s4-t9" name="To Verify TVOC Title is Visible" line="63">
+<kw name="isTVOCTitleVisible" owner="DashboardPageKeywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.715679" level="INFO">${tvoc_metric_summary_title} = xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='TVOC')]</msg>
+<var>${tvoc_metric_summary_title}</var>
+<arg>xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_tvoc}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.715479" elapsed="0.000233"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.716034" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.716112" level="FAIL">No browser is open.</msg>
+<arg>${tvoc_metric_summary_title}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.715832" elapsed="0.000776">No browser is open.</status>
+</kw>
+<arg>${tvoc_title}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.715190" elapsed="0.001534">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.714878" elapsed="0.002013">No browser is open.</status>
+</test>
+<test id="s1-s4-t10" name="To Verify CO2 Title is Visible" line="66">
+<kw name="isCO2TitleVisible" owner="DashboardPageKeywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.717918" level="INFO">${CO2_metric_summary_title} = xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='CO₂')]</msg>
+<var>${CO2_metric_summary_title}</var>
+<arg>xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle') and text()='${title_CO2}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.717709" elapsed="0.000244"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.718288" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.718435" level="FAIL">No browser is open.</msg>
+<arg>${CO2_metric_summary_title}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.718072" elapsed="0.000876">No browser is open.</status>
+</kw>
+<arg>${co2_title}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.717431" elapsed="0.001647">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.717094" elapsed="0.002205">No browser is open.</status>
+</test>
+<test id="s1-s4-t11" name="To Verify History Title is Visible" line="69">
+<kw name="isHistoryTitleVisible" owner="DashboardPageKeywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-09T17:58:41.720673" level="INFO">${history_title} = xpath://*[(contains(@class,'Chartsstyles__StyledHeader') and text()='History')]</msg>
+<var>${history_title}</var>
+<arg>xpath://*[(contains(@class,'Chartsstyles__StyledHeader') and text()='${title_history}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.720460" elapsed="0.000239"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.720956" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-09T17:58:41.721015" level="FAIL">No browser is open.</msg>
+<arg>${history_title}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-09T17:58:41.720793" elapsed="0.000582">No browser is open.</status>
+</kw>
+<arg>${history_title}</arg>
+<status status="FAIL" start="2026-04-09T17:58:41.720092" elapsed="0.001371">No browser is open.</status>
+</kw>
+<kw name="Close My Browser" owner="LoginPageKeywords">
+<status status="NOT RUN" start="2026-04-09T17:58:41.721599" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:41.719655" elapsed="0.002072">No browser is open.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:41.697507" elapsed="0.024440"/>
+</suite>
+<suite id="s1-s5" name="DevicesListPageTest" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DevicesListPageTest.robot">
+<test id="s1-s5-t1" name="To Verify Successfully Login" line="16">
+<kw name="Open My Browser" owner="LoginPageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:41.726066" level="INFO">Opening browser 'chrome' to base url 'https://otl-qa.arrayviewpoint.fellowes.com/login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-09T17:58:41.725906" elapsed="4.735506"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-09T17:58:46.461594" elapsed="0.017292"/>
+</kw>
+<arg>${APP_URL}</arg>
+<arg>${TEST_BROWSER}</arg>
+<status status="PASS" start="2026-04-09T17:58:41.725589" elapsed="4.753395"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>${overlay}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2026-04-09T17:58:46.479414" elapsed="1.071077"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:46.479158" elapsed="1.071578"/>
+</kw>
+<kw name="Enter Username" owner="LoginPageKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:47.552332" level="INFO">Typing text 'e-sdhepale@fellowes.com' into text field 'xpath://*[@data-testid='email-input']'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T17:58:47.551849" elapsed="0.082531"/>
+</kw>
+<arg>${CORRECT_EMAIL}</arg>
+<status status="PASS" start="2026-04-09T17:58:47.551130" elapsed="0.083345"/>
+</kw>
+<kw name="Enter Password" owner="LoginPageKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:47.635040" level="INFO">Typing text 'Onward@2023' into text field 'xpath://*[@data-testid='password-input']'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T17:58:47.634881" elapsed="0.043738"/>
+</kw>
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="PASS" start="2026-04-09T17:58:47.634648" elapsed="0.044104"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:47.679363" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>${btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T17:58:47.679190" elapsed="0.052627"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:47.678930" elapsed="0.052986"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-09T17:58:52.732390" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-09T17:58:47.732063" elapsed="5.000537"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>${overlay}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2026-04-09T17:58:52.733584" elapsed="0.316705"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:52.733047" elapsed="0.317339"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginPageKeywords">
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>${overlay}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2026-04-09T17:58:53.051126" elapsed="0.025256"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:53.050791" elapsed="0.025691"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:53.079411" level="INFO">Page title is 'Dashboard'.</msg>
+<arg>${page_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-04-09T17:58:53.076591" elapsed="0.002903"/>
+</kw>
+<arg>${page_title}</arg>
+<status status="PASS" start="2026-04-09T17:58:53.050559" elapsed="0.029010"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:41.725226" elapsed="11.354470"/>
+</test>
+<test id="s1-s5-t2" name="To Verify Devices tab is visible and clickable in Navigation Bar" line="26">
+<kw name="Click on Devices Page" owner="ViewpointNavigationBarKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:53.080597" level="INFO">Clicking element 'link=Devices'.</msg>
+<arg>${devices_page}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T17:58:53.080409" elapsed="0.138305"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:53.080160" elapsed="0.138669"/>
+</kw>
+<kw name="Wait For Overlay To Disappear" owner="LoginPageKeywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>${overlay}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2026-04-09T17:58:53.219255" elapsed="2.923272"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:53.219001" elapsed="2.923614"/>
+</kw>
+<status status="PASS" start="2026-04-09T17:58:53.079872" elapsed="3.062863"/>
+</test>
+<status status="PASS" start="2026-04-09T17:58:41.722353" elapsed="14.420616"/>
+</suite>
+<suite id="s1-s6" name="GraphDataValidation" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot">
+<test id="s1-s6-t1" name="Validate Dynamic Sensor Data On Graph" line="22">
+<kw name="Capture And Validate Sensor API Data">
+<kw name="Create Session">
+<msg time="2026-04-09T17:58:56.147650" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<arg>sensor</arg>
+<arg>${API_BASE}</arg>
+<arg>headers=${HEADERS}</arg>
+<arg>verify=False</arg>
+<status status="FAIL" start="2026-04-09T17:58:56.147611" elapsed="0.000074">No keyword with name 'Create Session' found.</status>
+</kw>
+<kw name="GET On Session">
+<var>${response}</var>
+<arg>sensor</arg>
+<arg>${ENDPOINT}</arg>
+<status status="NOT RUN" start="2026-04-09T17:58:56.147790" elapsed="0.000020"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.147878" elapsed="0.000020"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${json}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.147958" elapsed="0.000016"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${json}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148033" elapsed="0.000019"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get From Dictionary" owner="Collections">
+<var>${value}</var>
+<arg>${entry}</arg>
+<arg>value</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148210" elapsed="0.000018"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Air Quality values: ${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148287" elapsed="0.000018"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${value} &gt;= 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148362" elapsed="0.000016"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${value} &lt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148427" elapsed="0.000016"/>
+</kw>
+<var name="${entry}"/>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148156" elapsed="0.000310"/>
+</iter>
+<var>${entry}</var>
+<value>@{json}</value>
+<status status="NOT RUN" start="2026-04-09T17:58:56.148091" elapsed="0.000404"/>
+</for>
+<status status="FAIL" start="2026-04-09T17:58:56.146398" elapsed="0.002175">No keyword with name 'Create Session' found.</status>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:56.146009" elapsed="0.002678">No keyword with name 'Create Session' found.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:56.143459" elapsed="0.005430"/>
+</suite>
+<suite id="s1-s7" name="GraphDataValidationDynamicAPI" source="/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot">
+<test id="s1-s7-t1" name="Validate Dynamic Sensor Data On Graph" line="24">
+<kw name="Login To Application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-09T17:58:56.152565" level="FAIL">Variable '${BROWSER}' not found.</msg>
+<arg>${API_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-09T17:58:56.152188" elapsed="0.000408">Variable '${BROWSER}' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.152684" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://*[@data-testid="email-input"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.152785" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://*[@data-testid="password-input"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.152886" elapsed="0.000023"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://*[@data-testid="button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.152988" elapsed="0.000024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.153094" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[contains(@class, "NavBarstyles__NavMenuWrapper")]//a[@href='/']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.153202" elapsed="0.000025"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${Get_Dashboard}</var>
+<arg>xpath://div[contains(@class, "NavBarstyles__NavMenuWrapper")]//a[@href='/']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.153312" elapsed="0.000031"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Get_Dashboard}</arg>
+<arg>Dashboard</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.153425" elapsed="0.000032"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-09T17:58:56.153577" elapsed="0.000035"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:56.152004" elapsed="0.001790">Variable '${BROWSER}' not found.</status>
+</kw>
+<kw name="Capture And Validate Sensor API Data">
+<status status="NOT RUN" start="2026-04-09T17:58:56.154106" elapsed="0.000047"/>
+</kw>
+<kw name="Get X And Y Axis From Canvas">
+<status status="NOT RUN" start="2026-04-09T17:58:56.154343" elapsed="0.000038"/>
+</kw>
+<status status="FAIL" start="2026-04-09T17:58:56.151719" elapsed="0.002835">Variable '${BROWSER}' not found.</status>
+</test>
+<status status="FAIL" start="2026-04-09T17:58:56.149253" elapsed="0.005581"/>
+</suite>
+<status status="FAIL" start="2026-04-09T17:58:41.434678" elapsed="14.720963"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="27" skip="0">All Tests</stat>
+>>>>>>> Stashed changes
 </total>
 <tag>
 <stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
 </tag>
 <suite>
+<<<<<<< Updated upstream
 <stat pass="0" fail="27" skip="0" id="s1" name="AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI</stat>
 <stat pass="0" fail="5" skip="0" id="s1-s1" name="AdminLoginTest">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AdminLoginTest</stat>
 <stat pass="0" fail="5" skip="0" id="s1-s2" name="AreasPageTest">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AreasPageTest</stat>
@@ -220,5 +1247,43 @@
 </statistics>
 <errors>
 <msg timestamp="20260403 15:38:52.954" level="WARN">The chromedriver version (146.0.7670.0) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (146.0.7680.177); currently, chromedriver 146.0.7680.165 is recommended for chrome 146.*, so it is advised to delete the driver in PATH and retry</msg>
+=======
+<stat name="AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI" id="s1" pass="2" fail="27" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI</stat>
+<stat name="AdminLoginTest" id="s1-s1" pass="0" fail="5" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AdminLoginTest</stat>
+<stat name="AreasPageTest" id="s1-s2" pass="0" fail="6" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AreasPageTest</stat>
+<stat name="CommunityDashboardTest" id="s1-s3" pass="0" fail="3" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.CommunityDashboardTest</stat>
+<stat name="DashboardPageTest" id="s1-s4" pass="0" fail="11" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DashboardPageTest</stat>
+<stat name="DevicesListPageTest" id="s1-s5" pass="2" fail="0" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DevicesListPageTest</stat>
+<stat name="GraphDataValidation" id="s1-s6" pass="0" fail="1" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidation</stat>
+<stat name="GraphDataValidationDynamicAPI" id="s1-s7" pass="0" fail="1" skip="0">AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidationDynamicAPI</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-09T17:58:41.651699" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot' on line 4: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.</msg>
+<msg time="2026-04-09T17:58:41.689794" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.</msg>
+<msg time="2026-04-09T17:58:41.698839" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot' on line 4: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.</msg>
+<msg time="2026-04-09T17:58:56.144765" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot' on line 3: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/.venv/bin
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/.venv/lib/python3.12/site-packages</msg>
+<msg time="2026-04-09T17:58:56.145546" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot' on line 6: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.</msg>
+<msg time="2026-04-09T17:58:56.150633" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot' on line 3: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/.venv/bin
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/.venv/lib/python3.12/site-packages</msg>
+<msg time="2026-04-09T17:58:56.151238" level="ERROR">Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot' on line 5: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.</msg>
+>>>>>>> Stashed changes
 </errors>
 </robot>

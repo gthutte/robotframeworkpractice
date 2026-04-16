@@ -1,10 +1,18 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library    ../Resources/LoadDotenvVariables.py
 Variables       ../PageObjects/LoginPageLocators.py
 
 
-*** Keywords ***
+*** Variables ***
+${URL}    https://example.com
+${BROWSER}    chrome
+${USERNAME}    your_username
+${PASSWORD}    your_password
+${page_title}    Example Domain
 
+
+*** Keywords ***
 Open My Browser
     [Arguments]    ${URL}  ${BROWSER}
     open browser    ${URL}  ${BROWSER}
@@ -31,3 +39,7 @@ Verify Successfull Login
 
 Close My Browser
     close all browsers
+
+Load .env Variables
+    ${dotenv}=    Evaluate    __import__('Resources.LoadDotenvVariables').LoadDotenvVariables()
+    ${None}=    Evaluate    ${dotenv}.set_env_variables_as_robot_variables()
