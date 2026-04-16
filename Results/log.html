@@ -5,16 +5,60 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 6.1.1 (Python 3.7.7 on linux)" name="Generator">
+<meta content="Robot Framework 7.3.2 (Python 3.12.5 on linux)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all" type="text/css">
+<style media="all">
+:root {
+    --text-color: black;
+    --background-color: white;
+    --primary-color: #ddd;
+    --secondary-color: #ccc;
+    --link-color: #15c;
+    --link-hover-color: #61c;
+    --highlight-color: #eee;
+    --target-color: #f9f9f9;
+    --pass-color: #97bd61;
+    --fail-color: #ce3e01;
+    --warn-color: #fed84f;
+    --pass-link-color: #098a09;
+    --warn-link-color: #927201;
+    --fail-link-color: #ce3e01;
+    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+[data-theme="dark"] {
+    --text-color: #e2e1d7;
+    --background-color: #1c2227;
+    --primary-color: #26373b;
+    --secondary-color: #424f5a;
+    --link-color: #8cc4ff;
+    --link-hover-color: #bb86fc;
+    --highlight-color: #002b36;
+    --target-color: #1a252e;
+    --pass-link-color: #97bd61;
+    --warn-link-color: #fed84f;
+    --fail-link-color: #ff9b8f;
+    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+}
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black;
+    color: black; /* Fallback value */
+    color: var(--text-color);
     padding: 6px;
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
+    margin-left: 15px;
+}
+body[theme-toggled] {
+    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 table {
     table-layout: fixed;
@@ -29,20 +73,37 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c;
+    color: #15c; /* Fallback value */
+    color: var(--link-color);
 }
 a > img {
-    border: 1px solid #15c !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #15c !important; /* Fallback value */
+    border-color: var(--link-color) !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c;
+    color: #61c; /* Fallback value */
+    color: var(--link-hover-color);
+}
+select {
+    background-color: white; /* Fallback value */
+    background-color: var(--background-color);
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-radius: 4px;
 }
 .parent-name {
     font-size: 0.7em;
@@ -55,7 +116,7 @@ a:hover, a:active {
 #header {
     width: 65em;
     height: 3em;
-    margin: 6px 0;
+    margin: 20px 0 6px 0;
 }
 h1 {
     float: left;
@@ -83,14 +144,17 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important;
+    color: #ce3e01 !important; /* Fallback value */
+    color: var(--fail-link-color) !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important;
+    color: #098a09 !important; /* Fallback value */
+    color: var(--pass-link-color) !important;
 }
 .skip {
-    color: #927201 !important;
+    color: #927201 !important; /* Fallback value */
+    color: var(--warn-link-color) !important;
     font-weight: bold;
 }
 .label {
@@ -98,8 +162,10 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black;
-    background-color: #ddd;
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -109,15 +175,18 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61;
+    background-color: #97bd61; /* Fallback value */
+    background-color: var(--pass-color);
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01;
+    background-color: #ce3e01; /* Fallback value */
+    background-color: var(--fail-color);
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f;
+    background-color: #fed84f; /* Fallback value */
+    background-color: var(--warn-color);
     color: #000 !important;
 }
 /* Top right header */
@@ -146,7 +215,8 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd;
+    background: #ddd; /* Fallback value */
+    background: var(--primary-color);
 }
 /* Statistics table */
 .statistics {
@@ -156,15 +226,20 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -200,27 +275,33 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     width: auto;
     height: 7px;
     padding: 0;
-    background: #aaa;
 }
 .empty-graph {
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01;
+    background: #ce3e01; /* Fallback value */
+    background: var(--fail-color);
 }
 .pass-bar {
-    background: #97bd61;
+    background: #97bd61; /* Fallback value */
+    background: var(--pass-color);
 }
 .skip-bar {
-    background: #fed84f;
+    background: #fed84f; /* Fallback value */
+    background: var(--warn-color);
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -230,30 +311,84 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--secondary-color);
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--ascending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--descending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
+}
+#theme-toggle {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    padding: 4px;
+    z-index: 1000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: var(--highlight-color);
+}
+[data-theme="dark"] .dark-mode-icon,
+[data-theme="light"] .light-mode-icon {
+    display: none;
+}
+[data-theme="dark"] .light-mode-icon,
+[data-theme="light"] .dark-mode-icon {
+    display: block;
+}
+@keyframes highlight {
+    0% {
+        background: var(--primary-color)
+    }
+    100% {
+        background: var(--target-color);
+    }
+}
+:target {
+    background: var(--target-color);
+    transition: background 0.3s;
+    animation: highlight 4s;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
+:root {
+    --icon-filter: invert(0);
+    --icon-highlight: var(--secondary-color);
+    --elapsed-color: #666;
+}
+/* @media (prefers-color-scheme: dark) { */
+[data-theme="dark"] {
+    --icon-filter: invert(1);
+    --icon-highlight: #a39990;
+    --elapsed-color: #999;
+}
 /* Containers */
 .suite, .test, #errors {
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -282,8 +417,10 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee;
-    border-color: #ccc;
+    background-color: #eee; /* Fallback value */
+    background-color: var(--highlight-color);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
 }
 .element-header-toggle {
     position: absolute;
@@ -293,10 +430,14 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
+    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -304,7 +445,8 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -324,23 +466,31 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
+    white-space: pre-wrap;
+}
+.arg, .assign {
+    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666;
+    color: #666; /* Fallback value */
+    color: var(--elapsed-color);
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
+    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
+    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
+    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -352,7 +502,10 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .link {
@@ -362,7 +515,8 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -403,11 +557,16 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    border: 1px solid #ccc;
+    filter: var(--icon-filter);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -439,7 +598,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print" type="text/css">
+<style media="print">
 body {
     background: white !important;
     padding: 0;
@@ -479,7 +638,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -502,7 +661,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -514,14 +673,12 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
-    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
-    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -531,24 +688,32 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
+    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc code {
+    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img {
-    border: 1px solid #ccc;
+.doc img, .doc table, .doc table th, .doc table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
 }
 .doc hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
@@ -559,10 +724,13 @@ function toggleSuite(suiteId) {
     toggleElement(suiteId, ['keyword', 'suite', 'test']);
 }
 function toggleTest(testId) {
-    toggleElement(testId, ['keyword']);
     var test = window.testdata.findLoaded(testId);
-    if (test.status == "FAIL" || test.status == "SKIP")
+    var autoExpand = test.status == "FAIL" || test.status == "SKIP";
+    var closed = $('#' + testId).children('.element-header').hasClass('closed');
+    if (autoExpand && closed)
         expandFailed(test);
+    else
+        toggleElement(testId, ['keyword']);
 }
 function toggleKeyword(kwId) {
     toggleElement(kwId, ['keyword']);
@@ -850,7 +1018,6 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
-        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -941,6 +1108,7 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
+            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -961,7 +1129,6 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
-        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -972,13 +1139,12 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
-        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =' : '');
+        kw.assign = data.assign + (data.assign ? ' =  ' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1089,58 +1255,48 @@ window.stats = (function () {
             });
     }
     function calculatePercents(total, passed, failed, skipped) {
-        if (total == 0) {
+        if (total == 0)
             return [0.0, 0.0, 0.0];
-        }
         var pass = 100.0 * passed / total;
         var skip = 100.0 * skipped / total;
         var fail = 100.0 * failed / total;
         if (pass > 0 && pass < 0.1)
-            pass = 0.1
+            pass = 0.1;
         if (fail > 0 && fail < 0.1)
-            fail = 0.1
+            fail = 0.1;
         if (skip > 0 && skip < 0.1)
-            skip = 0.1
+            skip = 0.1;
         if (pass > 99.95 && pass < 100)
-            pass = 99.9
+            pass = 99.9;
         if (fail > 99.95 && fail < 100)
-            fail = 99.9
+            fail = 99.9;
         if (skip > 99.95 && skip < 100)
-            skip = 99.9
-        return [Math.round(pass*10)/10, Math.round(skip*10)/10, Math.round(fail*10)/10];
+            skip = 99.9;
+        return [round1(pass), round1(skip), round1(fail)];
     }
     function calculateWidths(num1, num2, num3) {
         if (num1 + num2 + num3 === 0)
             return [0.0, 0.0, 0.0];
         // Make small percentages better visible
         if (num1 > 0 && num1 < 1)
-            num1 = 1
+            num1 = 1.0;
         if (num2 > 0 && num2 < 1)
-            num2 = 1
+            num2 = 1.0;
         if (num3 > 0 && num3 < 1)
-            num3 = 1
+            num3 = 1.0;
         // Handle situation where some are rounded up
         while (num1 + num2 + num3 > 100) {
-            if (num1 > num2 && num1 > num3)
-                num1 -= 0.1;
-            else if (num2 > num1 && num2 > num3)
-                num2 -= 0.1;
-            else if (num3 > num1 && num3 > num2)
-                num3 -= 0.1;
-            else if (num1 > num3 && num1 == num2) {
-                num1 -= 0.1;
-                num2 -= 0.1;
-            }
-            else if (num1 > num2 && num1 == num3) {
-                num1 -= 0.1;
-                num3 -= 0.1;
-            }
-            else if (num2 > num1 && num2 == num3) {
-                num2 -= 0.1;
-                num3 -= 0.1;
-            }
+            if (num1 >= num2 && num1 >= num3)
+                num1 = round1(num1 - 0.1);
+            else if (num2 >= num1 && num2 >= num3)
+                num2 = round1(num2 - 0.1);
+            else
+                num3 = round1(num3 - 0.1);
         }
-        return [Math.ceil(num1*10)/10, Math.ceil(num2*10)/10, Math.ceil(num3*10)/10];
+        return [num1, num2, num3];
+    }
+    function round1(num) {
+        return Math.round(num*10) / 10;
     }
     return {
         Statistics: Statistics
@@ -1357,8 +1513,9 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
+                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
+                         'WHILE', 'GROUP', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1401,6 +1558,7 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
+        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1416,7 +1574,12 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(element[8], strings),
+            status: parseStatus(status),
+            message: function () {
+                var msg = status.length == 4 ? strings.get(status[3]) : '';
+                this.message = function () { return msg; };
+                return msg;
+            },
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1627,6 +1790,20 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
+const lightModeIcon = `
+<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
+</svg>`
+const darkModeIcon = `
+<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
+</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1662,6 +1839,10 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
+           '<button id=theme-toggle>' +
+             lightModeIcon +
+             darkModeIcon +
+           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1673,6 +1854,7 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
+    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1801,50 +1983,116 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
+const theme = function () {
+    const storageKey = 'theme-preference';
+    const urlParams = new URLSearchParams(window.location.search);
+    var storage;
+    var theme;
+    function init(givenStorage) {
+        storage = givenStorage;
+        theme = { value: getPreference() };
+        document.body.setAttribute('data-theme', theme.value);
+        reflectPreference();
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', ({matches:isDark}) => {
+                theme.value = isDark ? 'dark' : 'light';
+                setPreference();
+            });
+        window.addEventListener('storage', ({key, newValue}) => {
+            if (key === storage.fullKey(storageKey)) {
+                theme.value = newValue === 'dark' ? 'dark' : 'light';
+                setPreference();
+            }
+        });
+    }
+    function getPreference() {
+        if (urlParams.has('theme')) {
+            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
+            storage.set(storageKey, urlTheme);
+            urlParams.delete('theme');
+            return urlTheme;
+        }
+        if (storage.get(storageKey))
+            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function setPreference() {
+        storage.set(storageKey, theme.value);
+        reflectPreference();
+    }
+    function reflectPreference() {
+        document.body.setAttribute('data-theme', theme.value);
+        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
+        const event = new Event('theme-change', {value: theme.value});
+        document.dispatchEvent(event);
+    }
+    function onClick() {
+        theme.value = theme.value === 'light' ? 'dark' : 'light';
+        document.body.setAttribute('theme-toggled', "");
+        setPreference();
+    }
+    return {init: init, getPreference: getPreference, setPreference: setPreference,
+        reflectPreference: reflectPreference, onClick: onClick};
+}();
+</script>
+<script type="text/javascript">
+storage = function () {
+    var prefix = 'robot-framework-';
+    var storage;
+    function init(user) {
+        if (user)
+            prefix += user + '-';
+        storage = getStorage();
+    }
+    function getStorage() {
+        // Use localStorage if it's accessible, normal object otherwise.
+        // Inspired by https://stackoverflow.com/questions/11214404
+        try {
+            localStorage.setItem(prefix, prefix);
+            localStorage.removeItem(prefix);
+            return localStorage;
+        } catch (exception) {
+            return {};
+        }
+    }
+    function get(key, defaultValue) {
+        var value = storage[fullKey(key)];
+        if (typeof value === 'undefined')
+            return defaultValue;
+        return value;
+    }
+    function set(key, value) {
+        storage[fullKey(key)] = value;
+    }
+    function fullKey(key) {
+        return prefix + key;
+    }
+    return {init: init, get: get, set: set, fullKey: fullKey};
+}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-<<<<<<< Updated upstream
-window.output["suite"] = [1,0,0,0,[],[0,0,9874],[[2,3,4,0,[],[0,16,9820],[],[[5,0,0,[],[0,122,9704,6],[[0,7,8,0,0,9,0,0,[1,123,1964],[[0,10,11,0,12,13,0,0,[1,123,1950],[[124,2,14],[158,3,16]]],[0,17,11,0,18,0,0,0,[1,2073,14],[]]]],[0,19,8,0,0,0,0,0,[1,2087,434],[[0,20,11,0,21,22,0,0,[1,2088,433],[]]]],[0,23,8,0,0,24,0,0,[1,2521,73],[[0,25,11,0,26,27,0,0,[1,2522,72],[[2523,2,28]]]]],[0,29,8,0,0,30,0,0,[1,2594,51],[[0,25,11,0,26,31,0,0,[1,2595,50],[[2595,2,32]]]]],[0,33,8,0,0,0,0,0,[1,2645,50],[[0,34,11,0,35,36,0,0,[1,2646,49],[[2646,2,37]]]]],[0,38,39,0,40,41,0,0,[0,2696,7127],[]],[0,19,8,0,0,0,0,0,[3,9824,0],[]],[0,42,8,0,0,43,0,0,[3,9825,0],[]]]],[44,0,0,[45],[0,9827,2,46],[]],[47,0,0,[45],[0,9830,1,46],[]],[48,0,0,[45],[0,9832,1,46],[]],[49,0,0,[45],[0,9834,1,46],[]]],[],[5,0,5,0]],[50,51,52,0,[],[0,9839,6],[],[[5,0,0,[45],[0,9840,1,46],[]],[53,0,0,[45],[0,9841,1,46],[]],[54,0,0,[45],[0,9842,0,46],[]],[55,0,0,[45],[0,9843,1,46],[]],[56,0,0,[45],[0,9844,1,46],[]]],[],[5,0,5,0]],[57,58,59,0,[],[0,9847,5],[],[[5,0,0,[45],[0,9848,1,46],[]],[60,0,0,[45],[0,9849,1,46],[]],[61,0,0,[45],[0,9850,1,46],[]]],[],[3,0,3,0]],[62,63,64,0,[],[0,9853,9],[],[[5,0,0,[45],[0,9855,0,46],[]],[65,0,0,[45],[0,9855,1,46],[]],[66,0,0,[45],[0,9856,1,46],[]],[67,0,0,[45],[0,9857,2,46],[]],[68,0,0,[45],[0,9859,1,46],[]],[69,0,0,[45],[0,9860,0,46],[]],[70,0,0,[45],[0,9860,0,46],[]],[71,0,0,[45],[0,9861,0,46],[]],[72,0,0,[45],[0,9861,0,46],[]],[73,0,0,[45],[0,9862,0,46],[]]],[],[10,0,10,0]],[74,75,76,0,[],[0,9863,2],[],[[77,0,0,[45],[0,9863,1,46],[]],[78,0,0,[45],[0,9864,0,46],[]]],[],[2,0,2,0]],[79,80,81,0,[],[0,9866,2],[],[[82,0,0,[45],[0,9867,1,46],[]]],[],[1,0,1,0]],[83,84,85,0,[],[0,9869,3],[],[[82,0,0,[45],[0,9871,1,46],[]]],[],[1,0,1,0]]],[],[],[27,0,27,0]];
-=======
-window.output["suite"] = [1,0,0,0,[],[0,0,14721],[[2,3,4,0,[],[0,14,201],[],[[5,0,0,[],[0,202,3,6],[[0,7,8,0,0,0,0,0,[0,203,1],[[0,9,10,0,11,12,13,0,[0,203,1],[[204,5,6]]],[0,9,10,0,11,14,15,0,[3,204,0],[]]]],[0,16,8,0,0,17,0,0,[3,205,0],[]],[0,18,8,0,0,0,0,0,[3,205,0],[]],[0,19,8,0,0,20,0,0,[3,205,0],[]],[0,21,8,0,0,22,0,0,[3,205,0],[]],[0,23,8,0,0,0,0,0,[3,205,0],[]],[0,24,10,0,25,26,0,0,[3,205,0],[]],[0,18,8,0,0,0,0,0,[3,205,0],[]],[0,27,8,0,0,28,0,0,[3,206,0],[]]]],[29,0,0,[],[0,206,3,30],[[0,18,8,0,0,0,0,0,[0,206,2],[[0,31,32,0,33,34,0,0,[0,206,1],[[207,2,35],[207,5,30]]]]],[0,36,8,0,0,0,0,0,[3,208,0],[]],[0,37,8,0,0,0,0,0,[3,208,0],[]],[0,38,8,0,0,0,0,0,[3,208,0],[]],[0,39,8,0,0,0,0,0,[3,208,0],[]],[0,40,8,0,0,0,0,0,[3,208,0],[]],[0,41,8,0,0,42,0,0,[3,208,0],[]],[0,43,8,0,0,0,0,0,[3,209,0],[]]]],[44,0,0,[],[0,209,2,30],[[0,45,8,0,0,0,0,0,[0,209,1],[[0,46,32,0,47,48,0,0,[0,209,1],[[209,2,49],[210,2,35],[210,5,30]]]]],[0,18,8,0,0,0,0,0,[3,210,0],[]],[0,50,8,0,0,0,0,0,[3,211,0],[]]]],[51,0,0,[],[0,211,2,30],[[0,52,8,0,0,0,0,0,[0,211,1],[[0,46,32,0,47,53,0,0,[0,211,1],[[212,2,54],[212,2,35],[212,5,30]]]]],[0,18,8,0,0,0,0,0,[3,212,0],[]],[0,55,8,0,0,56,0,0,[3,212,0],[]]]],[57,0,0,[],[0,213,2,30],[[0,58,8,0,0,0,0,0,[0,213,1],[[0,46,32,0,47,59,0,0,[0,213,1],[[213,2,60],[213,2,35],[214,5,30]]]]],[0,61,8,0,0,0,0,0,[3,214,0],[]],[0,27,8,0,0,62,0,0,[3,214,0],[]],[0,63,8,0,0,0,0,0,[3,214,0],[]]]]],[],[5,0,5,0]],[64,65,66,0,[],[0,215,32],[],[[5,0,0,[],[0,232,4,67],[[0,16,68,0,0,17,0,0,[0,233,2],[[234,5,67]]],[0,18,68,0,0,0,0,0,[3,235,0],[]],[0,19,68,0,0,20,0,0,[3,235,0],[]],[0,21,68,0,0,22,0,0,[3,235,0],[]],[0,23,68,0,0,0,0,0,[3,235,0],[]],[0,24,10,0,25,69,0,0,[3,236,0],[]],[0,18,68,0,0,0,0,0,[3,236,0],[]]]],[70,0,0,[],[0,236,2,30],[[0,71,72,0,0,0,0,0,[0,236,1],[[0,46,32,0,47,73,0,0,[0,237,1],[[237,2,74],[237,2,35],[237,5,30]]]]],[0,75,76,0,0,0,0,0,[3,238,0],[]],[0,24,10,0,25,77,0,0,[3,238,0],[]]]],[78,0,0,[],[0,238,2,30],[[0,79,80,0,0,0,0,0,[0,238,1],[[0,81,32,0,82,83,0,0,[0,238,1],[[239,2,35],[239,5,30]]]]],[0,84,76,0,0,0,0,0,[3,239,0],[]],[0,85,80,0,0,0,0,0,[3,239,0],[]],[0,86,80,0,0,0,0,0,[3,239,0],[]],[0,79,80,0,0,0,0,0,[3,240,0],[]]]],[87,0,0,[],[0,240,3,30],[[3,88,0,0,0,0,0,0,[0,240,2],[[4,89,0,0,0,0,0,0,[0,240,2],[[0,90,76,0,0,91,0,0,[0,240,2],[[0,92,10,0,93,94,0,0,[0,241,1],[[0,95,76,0,0,96,0,0,[0,241,1],[[0,97,98,0,99,100,101,0,[1,241,0],[[241,2,102]]],[0,46,32,0,47,101,0,0,[0,241,1],[[241,2,103],[241,2,35],[241,5,30]]]]]]],[0,104,10,0,105,106,0,0,[3,242,0],[]],[0,79,80,0,0,0,0,0,[3,242,0],[]],[0,107,76,0,0,0,0,0,[3,242,0],[]]]]]]]]]],[108,0,0,[],[0,243,2,30],[[0,109,76,0,0,0,0,0,[0,243,1],[[0,46,32,0,47,110,0,0,[0,243,1],[[243,2,111],[243,2,35],[244,5,30]]]]],[0,79,80,0,0,0,0,0,[3,244,0],[]],[0,107,76,0,0,0,0,0,[3,244,0],[]],[3,112,0,0,0,0,0,0,[3,244,0],[[4,113,0,0,0,0,0,0,[3,244,0],[[0,114,76,0,0,115,0,0,[3,244,0],[]],[0,79,80,0,0,0,0,0,[3,245,0],[]],[0,107,76,0,0,0,0,0,[3,245,0],[]]]]]]]],[116,0,0,[],[0,245,2,30],[[0,117,76,0,0,0,118,0,[0,245,1],[[0,81,32,0,82,119,0,0,[0,246,1],[[246,2,35],[246,5,30]]],[0,120,32,0,121,122,123,0,[3,246,0],[]],[0,124,10,0,125,0,118,0,[3,246,0],[]],[3,126,0,0,0,0,0,0,[3,246,0],[[4,127,0,0,0,0,0,0,[3,246,0],[[0,128,32,0,129,130,131,0,[3,247,0],[]],[0,132,98,0,133,134,0,0,[3,247,0],[]]]]]],[8,0,0,0,0,118,0,0,[3,247,0],[]]]],[0,135,76,0,0,136,0,0,[3,247,0],[]],[0,24,10,0,25,77,0,0,[3,247,0],[]],[0,63,68,0,0,0,0,0,[3,247,0],[]]]]],[],[6,0,6,0]],[137,138,139,0,[],[0,248,14],[],[[5,0,0,[],[0,255,2,67],[[0,16,68,0,0,17,0,0,[0,256,1],[[256,5,67]]],[0,18,68,0,0,0,0,0,[3,256,0],[]],[0,19,68,0,0,20,0,0,[3,257,0],[]],[0,21,68,0,0,22,0,0,[3,257,0],[]],[0,23,68,0,0,0,0,0,[3,257,0],[]],[0,24,10,0,25,26,0,0,[3,257,0],[]],[0,18,68,0,0,0,0,0,[3,257,0],[]],[0,18,68,0,0,0,0,0,[3,257,0],[]],[0,140,68,0,0,141,0,0,[3,257,0],[]]]],[142,0,0,[],[0,258,2,30],[[0,143,72,0,0,0,0,0,[0,258,1],[[0,46,32,0,47,144,0,0,[0,258,1],[[258,2,145],[258,2,35],[258,5,30]]]]],[0,146,72,0,0,0,0,0,[3,259,0],[]],[0,24,10,0,25,26,0,0,[3,259,0],[]],[0,18,68,0,0,0,0,0,[3,259,0],[]]]],[147,0,0,[],[0,260,2,30],[[0,148,149,0,0,0,0,0,[0,260,1],[[0,46,32,0,47,150,0,0,[0,260,1],[[260,2,151],[260,2,35],[260,5,30]]]]],[0,152,149,0,0,153,0,0,[3,261,0],[]],[0,24,10,0,25,26,0,0,[3,261,0],[]],[0,154,149,0,0,0,0,0,[3,261,0],[]],[0,155,149,0,0,156,0,0,[3,261,0],[]],[0,24,10,0,25,26,0,0,[3,261,0],[]],[0,157,149,0,0,0,0,0,[3,261,0],[]],[0,158,149,0,0,136,0,0,[3,262,0],[]],[0,24,10,0,25,26,0,0,[3,262,0],[]],[0,63,68,0,0,0,0,0,[3,262,0],[]]]]],[],[3,0,3,0]],[159,160,161,0,[],[0,263,24],[],[[5,0,0,[],[0,266,2,6],[[0,7,68,0,0,0,0,0,[0,266,1],[[0,9,10,0,11,12,13,0,[0,267,0],[[267,5,6]]],[0,9,10,0,11,14,15,0,[3,267,0],[]]]],[0,16,68,0,0,17,0,0,[3,267,0],[]],[0,18,68,0,0,0,0,0,[3,267,0],[]],[0,19,68,0,0,20,0,0,[3,267,0],[]],[0,21,68,0,0,22,0,0,[3,268,0],[]],[0,23,68,0,0,0,0,0,[3,268,0],[]],[0,24,10,0,25,26,0,0,[3,268,0],[]],[0,18,68,0,0,0,0,0,[3,268,0],[]],[0,18,68,0,0,0,0,0,[3,268,0],[]],[0,140,68,0,0,141,0,0,[3,268,0],[]]]],[162,0,0,[],[0,269,2,30],[[0,163,72,0,0,0,0,0,[0,269,1],[[0,46,32,0,47,164,0,0,[0,269,1],[[269,2,165],[269,2,35],[269,5,30]]]]],[0,166,72,0,0,0,0,0,[3,270,0],[]],[0,167,72,0,0,153,0,0,[3,270,0],[]],[0,79,80,0,0,0,0,0,[3,270,0],[]],[0,85,80,0,0,0,0,0,[3,270,0],[]],[0,86,80,0,0,0,0,0,[3,270,0],[]],[0,79,80,0,0,0,0,0,[3,270,0],[]]]],[168,0,0,[],[0,271,2,30],[[0,169,80,0,0,0,0,0,[0,271,1],[[0,81,32,0,82,170,0,0,[0,271,1],[[272,2,35],[272,5,30]]],[0,171,32,0,172,173,0,0,[3,272,0],[]]]]]],[174,0,0,[],[0,273,2,30],[[0,175,80,0,0,0,0,0,[0,273,1],[[0,171,32,0,172,176,0,0,[0,273,1],[[274,2,35],[274,5,30]]]]]]],[177,0,0,[],[0,274,1,30],[[0,178,80,0,0,0,0,0,[0,275,1],[[0,171,32,0,172,179,0,0,[0,275,1],[[275,2,35],[275,5,30]]]]]]],[180,0,0,[],[0,276,1,30],[[0,181,80,0,0,0,0,0,[0,276,1],[[0,171,32,0,172,182,0,0,[0,276,1],[[276,2,35],[276,5,30]]]]]]],[183,0,0,[],[0,277,1,30],[[0,184,80,0,0,0,0,0,[0,277,1],[[0,171,32,0,172,185,0,0,[0,277,0],[[277,2,35],[278,5,30]]]]]]],[186,0,0,[],[0,278,1,30],[[0,187,80,0,0,188,0,0,[0,278,1],[[0,189,10,0,190,191,192,0,[1,279,0],[[279,2,193]]],[0,171,32,0,172,192,0,0,[0,279,1],[[279,2,35],[279,5,30]]]]]]],[194,0,0,[],[0,280,2,30],[[0,195,80,0,0,196,0,0,[0,280,2],[[0,189,10,0,190,197,198,0,[1,280,0],[[281,2,199]]],[0,171,32,0,172,198,0,0,[0,281,1],[[281,2,35],[281,5,30]]]]]]],[200,0,0,[],[0,282,2,30],[[0,201,80,0,0,202,0,0,[0,282,2],[[0,189,10,0,190,203,204,0,[1,283,0],[[283,2,205]]],[0,171,32,0,172,204,0,0,[0,283,1],[[283,2,35],[283,5,30]]]]]]],[206,0,0,[],[0,285,2,30],[[0,207,80,0,0,208,0,0,[0,285,1],[[0,189,10,0,190,209,208,0,[1,285,0],[[286,2,210]]],[0,171,32,0,172,208,0,0,[0,286,1],[[286,2,35],[286,5,30]]]]],[0,63,68,0,0,0,0,0,[3,287,0],[]]]]],[],[11,0,11,0]],[211,212,213,0,[],[1,287,14421],[],[[214,0,0,[],[1,290,11354],[[0,16,68,0,0,17,0,0,[1,291,4753],[[0,215,32,0,216,217,0,0,[1,291,4736],[[291,2,218]]],[0,219,32,0,220,0,0,0,[1,5027,17],[]]]],[0,18,68,0,0,0,0,0,[1,5044,1072],[[0,31,32,0,33,34,0,0,[1,5044,1071],[]]]],[0,19,68,0,0,20,0,0,[1,6116,83],[[0,221,32,0,222,223,0,0,[1,6117,83],[[6117,2,224]]]]],[0,21,68,0,0,22,0,0,[1,6200,44],[[0,221,32,0,222,225,0,0,[1,6200,44],[[6200,2,226]]]]],[0,23,68,0,0,0,0,0,[1,6244,53],[[0,227,32,0,228,229,0,0,[1,6244,53],[[6244,2,230]]]]],[0,24,10,0,25,77,0,0,[1,6297,5001],[[11297,2,231]]],[0,18,68,0,0,0,0,0,[1,11298,317],[[0,31,32,0,33,34,0,0,[1,11299,317],[]]]],[0,140,68,0,0,141,0,0,[1,11616,29],[[0,18,68,0,0,0,0,0,[1,11616,26],[[0,31,32,0,33,34,0,0,[1,11616,25],[]]]],[0,232,32,0,233,141,0,0,[1,11642,3],[[11644,2,234]]]]]]],[235,0,0,[],[1,11645,3063],[[0,236,72,0,0,0,0,0,[1,11645,139],[[0,46,32,0,47,237,0,0,[1,11645,138],[[11646,2,238]]]]],[0,18,68,0,0,0,0,0,[1,11784,2924],[[0,31,32,0,33,34,0,0,[1,11784,2923],[]]]]]]],[],[2,2,0,0]],[239,240,241,0,[],[0,14708,5],[],[[242,0,0,[],[0,14711,3,243],[[0,244,0,0,0,0,0,0,[0,14711,2],[[0,245,0,0,0,246,0,0,[0,14713,0],[[14713,5,243]]],[0,247,0,0,0,248,249,0,[3,14713,0],[]],[0,250,10,0,251,252,0,0,[3,14713,0],[]],[0,189,10,0,190,253,254,0,[3,14713,0],[]],[0,255,10,0,256,254,0,0,[3,14713,0],[]],[3,257,0,0,0,0,0,0,[3,14713,0],[[4,258,0,0,0,0,0,0,[3,14713,0],[[0,97,98,0,99,259,260,0,[3,14713,0],[]],[0,255,10,0,256,261,0,0,[3,14713,0],[]],[0,262,10,0,263,264,0,0,[3,14713,0],[]],[0,262,10,0,263,265,0,0,[3,14713,0],[]]]]]]]]]]],[],[1,0,1,0]],[266,267,268,0,[],[0,14714,6],[],[[242,0,0,[],[0,14717,3,269],[[0,270,0,0,0,0,0,0,[0,14717,2],[[0,215,32,0,216,271,0,0,[0,14717,0],[[14718,5,269]]],[0,24,10,0,25,77,0,0,[3,14718,0],[]],[0,221,32,0,222,272,0,0,[3,14718,0],[]],[0,221,32,0,222,273,0,0,[3,14718,0],[]],[0,227,32,0,228,274,0,0,[3,14718,0],[]],[0,24,10,0,25,77,0,0,[3,14718,0],[]],[0,81,32,0,82,275,0,0,[3,14718,0],[]],[0,128,32,0,129,275,276,0,[3,14718,0],[]],[0,277,10,0,278,279,0,0,[3,14718,0],[]],[0,24,10,0,25,280,0,0,[3,14719,0],[]]]],[0,244,0,0,0,0,0,0,[3,14719,0],[]],[0,281,0,0,0,0,0,0,[3,14719,0],[]]]]],[],[1,0,1,0]]],[],[],[29,2,27,0]];
->>>>>>> Stashed changes
+window.output["suite"] = [1,0,0,0,[],[0,0,96143],[[2,3,4,0,[],[0,16,26381],[],[[5,0,0,[],[1,119,13111],[[0,6,7,0,0,8,0,0,[1,120,2270],[[0,9,10,0,11,12,0,0,[1,120,2256],[[120,2,13]]],[0,14,10,0,15,0,0,0,[1,2376,13],[]]]],[0,16,7,0,0,0,0,0,[1,2390,648],[[0,17,10,0,18,19,0,0,[1,2390,648],[]]]],[0,20,7,0,0,21,0,0,[1,3038,72],[[0,22,10,0,23,24,0,0,[1,3039,71],[[3039,2,25]]]]],[0,26,7,0,0,27,0,0,[1,3111,45],[[0,22,10,0,23,28,0,0,[1,3111,44],[[3111,2,29]]]]],[0,30,7,0,0,0,0,0,[1,3156,49],[[0,31,10,0,32,33,0,0,[1,3156,49],[[3156,2,34]]]]],[0,35,36,0,37,38,0,0,[1,3205,10001],[[13206,2,39]]],[0,16,7,0,0,0,0,0,[1,13206,17],[[0,17,10,0,18,19,0,0,[1,13207,16],[]]]],[0,40,7,0,0,41,0,0,[1,13224,7],[[0,42,10,0,43,0,44,0,[1,13224,6],[[13230,2,45]]],[0,46,36,0,47,48,0,0,[1,13230,0],[]]]]]],[49,0,0,[],[0,13231,10507,50],[[0,16,7,0,0,0,0,0,[1,13231,5],[[0,17,10,0,18,19,0,0,[1,13231,5],[]]]],[0,51,7,0,0,0,0,0,[1,13236,59],[[0,52,10,0,53,54,0,0,[1,13237,13],[]],[0,31,10,0,32,55,0,0,[1,13250,44],[[13250,2,56]]]]],[0,57,7,0,0,0,0,0,[1,13295,38],[[0,58,10,0,59,60,0,0,[1,13295,38],[[13295,2,61]]]]],[0,62,7,0,0,0,0,0,[1,13333,48],[[0,58,10,0,59,63,0,0,[1,13334,48],[[13334,2,64]]]]],[0,65,7,0,0,0,0,0,[1,13382,49],[[0,31,10,0,32,66,0,0,[1,13382,49],[[13382,2,67]]]]],[0,68,7,0,0,0,0,0,[0,13432,10306],[[0,52,10,0,53,69,0,0,[0,13432,10305],[[23736,2,70],[23736,5,50]]]]],[0,71,7,0,0,0,0,0,[3,23737,0],[]]]],[72,0,0,[],[1,23738,1373],[[0,73,7,0,0,0,0,0,[1,23738,45],[[0,58,10,0,59,74,0,0,[1,23738,45],[[23738,2,75]]]]],[0,16,7,0,0,0,0,0,[1,23783,1055],[[0,17,10,0,18,19,0,0,[1,23784,1055],[]]]],[0,76,7,0,0,0,0,0,[1,24839,272],[[0,77,36,0,78,79,80,0,[1,24839,262],[[0,81,10,0,82,83,0,0,[0,24840,262],[[25101,2,84],[25101,5,85]]],[25102,2,86]]],[0,77,36,0,78,87,88,0,[1,25102,8],[[0,89,10,0,90,91,0,0,[1,25102,8],[[25110,2,92]]],[25110,2,93]]],[5,80,0,0,0,0,0,0,[3,25110,0],[[0,94,36,0,95,96,0,0,[3,25110,0],[]]]],[6,88,0,0,0,0,0,0,[1,25110,0],[[0,94,36,0,95,97,0,0,[1,25111,0],[]]]],[7,0,0,0,0,0,0,0,[3,25111,0],[[0,98,36,0,99,100,0,0,[3,25111,0],[]]]]]]]],[101,0,0,[],[1,25111,1134],[[0,102,7,0,0,0,0,0,[1,25111,46],[[0,58,10,0,59,103,0,0,[1,25112,45],[[25112,2,104]]]]],[0,16,7,0,0,0,0,0,[1,25157,1072],[[0,17,10,0,18,19,0,0,[1,25157,1072],[]]]],[0,105,7,0,0,106,0,0,[1,26230,16],[[0,107,10,0,108,109,110,0,[1,26230,15],[[26245,2,111]]],[0,112,36,0,113,114,0,0,[1,26245,0],[]]]]]],[115,0,0,[],[1,26246,151],[[0,116,7,0,0,0,0,0,[1,26246,35],[[0,58,10,0,59,117,0,0,[1,26246,35],[[26246,2,118]]]]],[0,119,7,0,0,0,0,0,[1,26281,43],[[0,58,10,0,59,120,0,0,[1,26282,43],[[26282,2,121]]]]],[0,40,7,0,0,122,0,0,[1,26325,5],[[0,42,10,0,43,0,44,0,[1,26326,4],[[26329,2,123]]],[0,46,36,0,47,48,0,0,[1,26330,0],[]]]],[0,124,7,0,0,0,0,0,[1,26330,66],[[0,125,10,0,126,0,0,0,[1,26330,66],[]]]]]]],[],[5,4,1,0]],[127,128,129,0,[],[0,26397,16682],[],[[5,0,0,[],[1,26415,5762],[[0,6,130,0,0,8,0,0,[1,26416,1441],[[0,9,10,0,11,12,0,0,[1,26416,1427],[[26416,2,131]]],[0,14,10,0,15,0,0,0,[1,27843,13],[]]]],[0,16,130,0,0,0,0,0,[1,27857,435],[[0,17,10,0,18,19,0,0,[1,27857,435],[]]]],[0,20,130,0,0,21,0,0,[1,28292,75],[[0,22,10,0,23,24,0,0,[1,28293,74],[[28293,2,132]]]]],[0,26,130,0,0,27,0,0,[1,28368,48],[[0,22,10,0,23,28,0,0,[1,28368,47],[[28368,2,133]]]]],[0,30,130,0,0,0,0,0,[1,28416,56],[[0,31,10,0,32,33,0,0,[1,28416,55],[[28416,2,34]]]]],[0,35,36,0,37,134,0,0,[1,28472,2001],[[30472,2,135]]],[0,16,130,0,0,0,0,0,[1,30473,1704],[[0,17,10,0,18,19,0,0,[1,30474,1703],[]]]]]],[136,0,0,[],[1,32177,5145],[[0,137,138,0,0,0,0,0,[1,32177,83],[[0,58,10,0,59,139,0,0,[1,32177,82],[[32178,2,140]]]]],[0,141,142,0,0,0,0,0,[1,32260,61],[[0,52,10,0,53,143,0,0,[1,32260,54],[]],[0,81,10,0,82,143,0,0,[1,32314,7],[[32321,2,144]]]]],[0,35,36,0,37,145,0,0,[1,32322,5000],[[37322,2,146]]]]],[147,0,0,[],[0,37323,282,148],[[0,149,150,0,0,0,0,0,[1,37324,26],[[0,52,10,0,53,151,0,0,[1,37324,25],[]]]],[0,152,142,0,0,0,0,0,[1,37350,3],[[0,153,10,0,154,155,0,0,[1,37350,3],[[37350,2,156]]]]],[0,157,150,0,0,0,0,0,[1,37353,47],[[0,58,10,0,59,158,0,0,[1,37353,39],[[37354,2,159]]],[0,52,10,0,53,160,0,0,[1,37392,8],[]]]],[0,161,150,0,0,0,0,0,[0,37401,204],[[0,162,10,0,163,164,0,0,[0,37401,203],[[37401,2,165],[37603,2,166],[37604,5,148]]]]],[0,149,150,0,0,0,0,0,[3,37604,0],[]]]],[167,0,0,[],[0,37605,271,168],[[3,169,0,0,0,0,0,0,[0,37605,271],[[4,170,0,0,0,0,0,0,[0,37605,271],[[0,171,142,0,0,172,0,0,[0,37605,270],[[0,173,36,0,174,175,0,0,[1,37605,61],[[0,176,142,0,0,177,0,0,[1,37606,60],[[0,178,179,0,180,181,182,0,[1,37606,0],[[37606,2,183]]],[0,58,10,0,59,182,0,0,[1,37606,60],[[37606,2,184]]]]]]],[0,185,36,0,186,187,0,0,[0,37666,209],[[0,188,142,0,0,0,0,0,[0,37666,209],[[0,58,10,0,59,189,0,0,[0,37667,209],[[37667,2,190],[37874,2,191],[37875,5,168]]]]]]],[0,149,150,0,0,0,0,0,[3,37875,0],[]],[0,192,142,0,0,0,0,0,[3,37876,0],[]]]]]]]]]],[193,0,0,[],[1,37876,5203],[[0,194,142,0,0,0,195,0,[1,37876,37],[[0,52,10,0,53,196,0,0,[1,37877,12],[]],[0,197,10,0,198,199,200,0,[1,37888,4],[[37893,2,201]]],[0,202,36,0,203,0,195,0,[1,37893,0],[[37893,2,204]]],[3,205,0,0,0,0,0,0,[1,37893,20],[[4,206,0,0,0,0,0,0,[1,37893,9],[[0,107,10,0,108,207,208,0,[1,37893,9],[[37902,2,209]]],[0,210,179,0,211,212,0,0,[1,37902,0],[]]]],[4,213,0,0,0,0,0,0,[1,37902,6],[[0,107,10,0,108,207,208,0,[1,37902,6],[[37908,2,214]]],[0,210,179,0,211,212,0,0,[1,37908,0],[]]]],[4,215,0,0,0,0,0,0,[1,37909,5],[[0,107,10,0,108,207,208,0,[1,37909,4],[[37913,2,216]]],[0,210,179,0,211,212,0,0,[1,37913,0],[]]]]]],[8,0,0,0,0,195,0,0,[1,37913,0],[]],[37914,2,217]]],[0,218,142,0,0,219,0,0,[1,37914,29],[[0,52,10,0,53,196,0,0,[1,37914,9],[]],[0,197,10,0,198,199,200,0,[1,37923,4],[[37927,2,201]]],[3,205,0,0,0,0,0,0,[1,37927,16],[[4,206,0,0,0,0,0,0,[1,37927,4],[[0,107,10,0,108,207,208,0,[1,37927,4],[[37931,2,209]]],[0,185,36,0,186,220,0,0,[1,37931,0],[]]]],[4,213,0,0,0,0,0,0,[1,37931,6],[[0,107,10,0,108,207,208,0,[1,37932,5],[[37937,2,214]]],[0,185,36,0,186,220,0,0,[1,37937,0],[]]]],[4,215,0,0,0,0,0,0,[1,37938,5],[[0,107,10,0,108,207,208,0,[1,37938,4],[[37942,2,216]]],[0,185,36,0,186,220,0,0,[1,37942,0],[]]]]]]]],[0,35,36,0,37,145,0,0,[1,37943,5000],[[42943,2,146]]],[0,124,130,0,0,0,0,0,[1,42943,136],[[0,125,10,0,126,0,0,0,[1,42944,135],[]]]]]]],[],[5,3,2,0]],[221,222,223,0,[],[0,43080,23023],[],[[5,0,0,[],[1,43084,12715],[[0,6,130,0,0,8,0,0,[1,43084,1880],[[0,9,10,0,11,12,0,0,[1,43085,1862],[[43085,2,131]]],[0,14,10,0,15,0,0,0,[1,44947,17],[]]]],[0,16,130,0,0,0,0,0,[1,44964,638],[[0,17,10,0,18,19,0,0,[1,44965,638],[]]]],[0,20,130,0,0,21,0,0,[1,45603,74],[[0,22,10,0,23,24,0,0,[1,45604,73],[[45604,2,132]]]]],[0,26,130,0,0,27,0,0,[1,45677,45],[[0,22,10,0,23,28,0,0,[1,45678,45],[[45678,2,133]]]]],[0,30,130,0,0,0,0,0,[1,45723,54],[[0,31,10,0,32,33,0,0,[1,45723,53],[[45723,2,34]]]]],[0,35,36,0,37,38,0,0,[1,45777,10001],[[55777,2,39]]],[0,16,130,0,0,0,0,0,[1,55778,9],[[0,17,10,0,18,19,0,0,[1,55778,8],[]]]],[0,16,130,0,0,0,0,0,[1,55787,4],[[0,17,10,0,18,19,0,0,[1,55787,4],[]]]],[0,224,130,0,0,225,0,0,[1,55791,8],[[0,16,130,0,0,0,0,0,[1,55792,5],[[0,17,10,0,18,19,0,0,[1,55792,5],[]]]],[0,226,10,0,227,225,0,0,[1,55797,2],[[55799,2,228]]]]]]],[229,0,0,[],[1,55800,10131],[[0,230,138,0,0,0,0,0,[1,55800,38],[[0,58,10,0,59,231,0,0,[1,55800,38],[[55800,2,232]]]]],[0,233,138,0,0,0,0,0,[1,55838,76],[[0,58,10,0,59,234,0,0,[1,55838,75],[[55839,2,235]]]]],[0,35,36,0,37,38,0,0,[1,55914,10001],[[65914,2,39]]],[0,16,130,0,0,0,0,0,[1,65915,15],[[0,17,10,0,18,19,0,0,[1,65915,15],[]]]]]],[236,0,0,[],[0,65931,172,237],[[0,238,239,0,0,0,0,0,[0,65932,170],[[0,58,10,0,59,240,0,0,[0,65932,169],[[65933,2,241],[66101,2,242],[66101,5,237]]]]],[0,243,239,0,0,244,0,0,[3,66102,0],[]],[0,35,36,0,37,38,0,0,[3,66102,0],[]],[0,245,239,0,0,0,0,0,[3,66102,0],[]],[0,246,239,0,0,247,0,0,[3,66102,0],[]],[0,35,36,0,37,38,0,0,[3,66102,0],[]],[0,248,239,0,0,0,0,0,[3,66102,0],[]],[0,249,239,0,0,219,0,0,[3,66103,0],[]],[0,35,36,0,37,38,0,0,[3,66103,0],[]],[0,124,130,0,0,0,0,0,[3,66103,0],[]]]]],[],[3,2,1,0]],[250,251,252,0,[],[0,66103,12810],[],[[5,0,0,[],[1,66107,12224],[[0,6,130,0,0,8,0,0,[1,66107,1384],[[0,9,10,0,11,12,0,0,[1,66107,1371],[[66107,2,131]]],[0,14,10,0,15,0,0,0,[1,67478,13],[]]]],[0,16,130,0,0,0,0,0,[1,67491,651],[[0,17,10,0,18,19,0,0,[1,67491,651],[]]]],[0,20,130,0,0,21,0,0,[1,68143,69],[[0,22,10,0,23,24,0,0,[1,68143,68],[[68144,2,132]]]]],[0,26,130,0,0,27,0,0,[1,68212,45],[[0,22,10,0,23,28,0,0,[1,68212,45],[[68212,2,133]]]]],[0,30,130,0,0,0,0,0,[1,68257,53],[[0,31,10,0,32,33,0,0,[1,68258,53],[[68258,2,34]]]]],[0,35,36,0,37,38,0,0,[1,68311,10000],[[78311,2,39]]],[0,16,130,0,0,0,0,0,[1,78312,6],[[0,17,10,0,18,19,0,0,[1,78312,5],[]]]],[0,16,130,0,0,0,0,0,[1,78318,4],[[0,17,10,0,18,19,0,0,[1,78318,4],[]]]],[0,224,130,0,0,225,0,0,[1,78322,8],[[0,16,130,0,0,0,0,0,[1,78322,5],[[0,17,10,0,18,19,0,0,[1,78322,5],[]]]],[0,226,10,0,227,225,0,0,[1,78328,3],[[78330,2,228]]]]]]],[253,0,0,[],[0,78331,324,254],[[0,255,138,0,0,0,0,0,[1,78331,79],[[0,58,10,0,59,256,0,0,[1,78331,79],[[78331,2,257]]]]],[0,258,138,0,0,0,0,0,[1,78410,41],[[0,58,10,0,59,259,0,0,[1,78411,41],[[78411,2,260]]]]],[0,261,138,0,0,244,0,0,[0,78451,203],[[0,58,10,0,59,262,0,0,[0,78452,202],[[78452,2,263],[78654,2,264],[78654,5,254]]]]],[0,149,150,0,0,0,0,0,[3,78655,0],[]],[0,157,150,0,0,0,0,0,[3,78655,0],[]],[0,161,150,0,0,0,0,0,[3,78655,0],[]],[0,149,150,0,0,0,0,0,[3,78655,0],[]]]],[265,0,0,[],[1,78655,37],[[0,266,150,0,0,0,0,0,[1,78656,14],[[0,81,10,0,82,267,0,0,[1,78656,14],[[78669,2,268]]]]],[0,269,150,0,0,0,0,0,[1,78670,12],[[0,81,10,0,82,270,0,0,[1,78670,11],[[78681,2,271]]]]],[0,272,150,0,0,0,0,0,[1,78682,11],[[0,81,10,0,82,273,0,0,[1,78682,10],[[78692,2,274]]]]]]],[275,0,0,[],[1,78692,11],[[0,276,150,0,0,0,0,0,[1,78693,11],[[0,81,10,0,82,277,0,0,[1,78693,11],[[78704,2,278]]]]]]],[279,0,0,[],[1,78704,11],[[0,280,150,0,0,0,0,0,[1,78704,11],[[0,81,10,0,82,281,0,0,[1,78705,11],[[78715,2,282]]]]]]],[283,0,0,[],[1,78716,12],[[0,284,150,0,0,0,0,0,[1,78716,12],[[0,81,10,0,82,285,0,0,[1,78716,12],[[78727,2,286]]]]]]],[287,0,0,[],[1,78728,12],[[0,288,150,0,0,289,0,0,[1,78728,11],[[0,290,36,0,291,292,293,0,[1,78728,0],[[78728,2,294]]],[0,81,10,0,82,293,0,0,[1,78729,11],[[78739,2,295]]]]]]],[296,0,0,[],[1,78740,12],[[0,297,150,0,0,298,0,0,[1,78740,11],[[0,290,36,0,291,299,300,0,[1,78740,0],[[78740,2,301]]],[0,81,10,0,82,300,0,0,[1,78741,11],[[78751,2,302]]]]]]],[303,0,0,[],[1,78752,17],[[0,304,150,0,0,305,0,0,[1,78752,17],[[0,290,36,0,291,306,307,0,[1,78752,0],[[78752,2,308]]],[0,81,10,0,82,307,0,0,[1,78753,16],[[78769,2,309]]]]]]],[310,0,0,[],[1,78769,144],[[0,311,150,0,0,312,0,0,[1,78770,13],[[0,290,36,0,291,313,312,0,[1,78770,0],[[78770,2,314]]],[0,81,10,0,82,312,0,0,[1,78770,12],[[78782,2,315]]]]],[0,124,130,0,0,0,0,0,[1,78783,130],[[0,125,10,0,126,0,0,0,[1,78783,130],[]]]]]]],[],[10,9,1,0]],[316,317,318,0,[],[1,78914,10875],[],[[319,0,0,[],[1,78916,7775],[[0,6,130,0,0,8,0,0,[1,78917,1926],[[0,9,10,0,11,12,0,0,[1,78917,1913],[[78917,2,131]]],[0,14,10,0,15,0,0,0,[1,80830,13],[]]]],[0,16,130,0,0,0,0,0,[1,80843,639],[[0,17,10,0,18,19,0,0,[1,80844,638],[]]]],[0,20,130,0,0,21,0,0,[1,81483,74],[[0,22,10,0,23,24,0,0,[1,81484,73],[[81484,2,132]]]]],[0,26,130,0,0,27,0,0,[1,81557,46],[[0,22,10,0,23,28,0,0,[1,81557,45],[[81558,2,133]]]]],[0,30,130,0,0,0,0,0,[1,81603,52],[[0,31,10,0,32,33,0,0,[1,81603,51],[[81603,2,34]]]]],[0,35,36,0,37,145,0,0,[1,81655,5001],[[86655,2,146]]],[0,16,130,0,0,0,0,0,[1,86656,17],[[0,17,10,0,18,19,0,0,[1,86656,16],[]]]],[0,224,130,0,0,225,0,0,[1,86674,17],[[0,16,130,0,0,0,0,0,[1,86674,12],[[0,17,10,0,18,19,0,0,[1,86674,12],[]]]],[0,226,10,0,227,225,0,0,[1,86687,4],[[86691,2,228]]]]]]],[320,0,0,[],[1,86691,3097],[[0,321,138,0,0,0,0,0,[1,86691,109],[[0,58,10,0,59,322,0,0,[1,86692,109],[[86692,2,323]]]]],[0,16,130,0,0,0,0,0,[1,86801,2987],[[0,17,10,0,18,19,0,0,[1,86801,2987],[]]]]]]],[],[2,2,0,0]],[324,325,326,0,[],[0,89789,20],[],[[327,0,0,[],[0,89791,18,328],[[0,329,0,0,0,0,0,0,[0,89806,2],[[0,330,0,0,0,331,0,0,[0,89808,0],[[89808,5,328]]],[0,332,0,0,0,333,334,0,[3,89808,0],[]],[0,335,36,0,336,337,0,0,[3,89808,0],[]],[0,290,36,0,291,338,339,0,[3,89808,0],[]],[0,94,36,0,95,339,0,0,[3,89808,0],[]],[3,340,0,0,0,0,0,0,[3,89808,0],[[4,341,0,0,0,0,0,0,[3,89808,0],[[0,178,179,0,180,342,343,0,[3,89808,0],[]],[0,94,36,0,95,344,0,0,[3,89808,0],[]],[0,345,36,0,346,347,0,0,[3,89808,0],[]],[0,345,36,0,346,348,0,0,[3,89808,0],[]]]]]]]]]]],[],[1,0,1,0]],[349,350,351,0,[],[0,89809,6333],[],[[327,0,0,[],[0,89811,6331,352],[[0,353,0,0,0,0,0,0,[0,89811,6330],[[0,9,10,0,11,354,0,0,[1,89811,1328],[[89812,2,355]]],[0,35,36,0,37,145,0,0,[1,91140,5000],[[96140,2,146]]],[0,22,10,0,23,356,0,0,[0,96140,1],[[96141,5,352]]],[0,22,10,0,23,357,0,0,[3,96141,0],[]],[0,31,10,0,32,358,0,0,[3,96141,0],[]],[0,35,36,0,37,145,0,0,[3,96141,0],[]],[0,52,10,0,53,359,0,0,[3,96141,0],[]],[0,107,10,0,108,359,360,0,[3,96141,0],[]],[0,112,36,0,113,361,0,0,[3,96141,0],[]],[0,35,36,0,37,362,0,0,[3,96142,0],[]]]],[0,329,0,0,0,0,0,0,[3,96142,0],[]],[0,363,0,0,0,0,0,0,[3,96142,0],[]]]]],[],[1,0,1,0]]],[],[],[27,20,7,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-<<<<<<< Updated upstream
-window.output["strings"] = window.output["strings"].concat(["*","eNp1yzEKg0AQRuGrWOUSVksWRLCwkPR/dgcdyMwuO5OAt7cTEdK+jxeysE5lZV3IvHtAat+FRrAZK13as4h8lX2PsO1d0PIFz3abIv04kU1sfpOhoW4Rjhc+nOFc9L/EXSGcwjwesOE/YQ==","*AdminLoginTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AdminLoginTest.robot","*../TestCases/AdminLoginTest.robot","*To Verify Successfull Login","*Execution terminated by signal","*Open My Browser","*AdminLoginKeywords","*${APP_URL}, ${TEST_BROWSER}","*Open Browser","*SeleniumLibrary","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${URL}, ${BROWSER}","eNqdy8ENwjAMAMBVrH7yavxHbVdgBre4TSQnDo4hYnuYgc/97t645nrBbjo6G4QjmRYO4Ao7dYaXCYSFIBmf65TcW78hqsv8pEhm9HlnHk1z9XiyiA7u8dCC9Ci5ouj1c9r+jAvSFuIXXvI7xQ==","*s1-s1-t1-k1-k1","eNplj7sKwkAQRX/lliqSB2giWNlZWvgDSXY0A5tdmZ0o+XtHgqJYbHfm3LPnntD1EgdywncS2EscAxblpsqKrK7qIiuWcKTUKTlwwOlwPqJR5GOS3Meu8XnLIf/RDHztFSEqWhuIw61Rbj3hwdpDbfQjnM/+d3dFVtb1co9uFKGgflr/ln6D1RacIGRLAwVn2kuUt/oFrtZIEawvrHF3ToZotApvHXPQbP38LzjzqUxPLpBgtg==","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Wait For Overlay To Disappear","*Wait Until Page Does Not Contain Element","*<p>Waits until the element <code>locator\x3c/code> disappears from the current page.\x3c/p>","*${overlay}, timeout=15s","*Enter Username","*${CORRECT_EMAIL}","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${txt_loginUserName}, ${USERNAME}","*Typing text 'rohan_kadu@onwardgroup.com' into text field '<a href=\"xpath://*[@data-testid='email-input\">xpath://*[@data-testid='email-input\x3c/a>']'.","*Enter Password","*${CORRECT_PASSWORD}","*${txt_loginPassword}, ${PASSWORD}","*Typing text '0}Av|55#N27=' into text field '<a href=\"xpath://*[@data-testid='password-input\">xpath://*[@data-testid='password-input\x3c/a>']'.","*Click Login Button","*Click Button","*<p>Clicks the button identified by <code>locator\x3c/code>.\x3c/p>","*${btn_login}","*Clicking button '<a href=\"xpath://button[@type='submit\">xpath://button[@type='submit\x3c/a>']'.","*Sleep","*BuiltIn","*<p>Pauses the test executed for the given time.\x3c/p>","*10","*isCurrentUrlCorrect","*${EXPECTED_URL}","*To Verify Subscription Plan Changes Successfully","*robot:exit","*Test execution stopped due to a fatal error.","*To Verify Devices Tab is loaded Successfully","*To Verify Users Tab is loaded Successfully","*To Verify User Logged Out Successfully","*AreasPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot","*../TestCases/AreasPageTest.robot","*To Verify Areas page is clickable and visible","*To Verify Graph Comparison is working on Areas Page","*Verify All Metric Graphs","*To Verify Given Area is available in list and Clickable","*CommunityDashboardTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot","*../TestCases/CommunityDashboardTest.robot","*To Verify Community Dashboard is Selected from Account Menu","*To Verify Location is selected successfully","*DashboardPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot","*../TestCases/DashboardPageTest.robot","*To Verify Graph Comparison is working on Dashboard Page","*To Verify Overview Section is visible","*To Verify Current Air Quality Label is Visible","*To Verify Current Air Quality Value is Visible","*To Verify Current Air Quality Status is Visible","*To Verify PM2.5 Title is Visible","*To Verify TVOC Title is Visible","*To Verify CO2 Title is Visible","*To Verify History Title is Visible","*DevicesListPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DevicesListPageTest.robot","*../TestCases/DevicesListPageTest.robot","*To Verify Successfully Login","*To Verify Devices tab is visible and clickable in Navigation Bar","*GraphDataValidation","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot","*../TestCases/GraphDataValidation.robot","*Validate Dynamic Sensor Data On Graph","*GraphDataValidationDynamicAPI","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot","*../TestCases/GraphDataValidationDynamicAPI.robot"]);
+window.output["strings"] = window.output["strings"].concat(["*","eNp1yzEKg0AQRuGrWOUSVksWRLCwkPR/dgcdyMwuO5OAt7cTEdK+jxeysE5lZV3IvHtAat+FRrAZK13as4h8lX2PsO1d0PIFz3abIv04kU1sfpOhoW4Rjhc+nOFc9L/EXSGcwjwesOE/YQ==","*AdminLoginTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AdminLoginTest.robot","*../TestCases/AdminLoginTest.robot","*To Verify Successfull Login","*Open My Browser","*AdminLoginKeywords","*${APP_URL}    ${TEST_BROWSER}","*Open Browser","*SeleniumLibrary","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${URL}    ${BROWSER}","eNqdy8ENwjAMAMBVrH7yavxHbVdgBre4TSQnDo4hYnuYgc/97t645nrBbjo6G4QjmRYO4Ao7dYaXCYSFIBmf65TcW78hqsv8pEhm9HlnHk1z9XiyiA7u8dCC9Ci5ouj1c9r+jAvSFuIXXvI7xQ==","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Wait For Overlay To Disappear","*Wait Until Page Does Not Contain Element","*<p>Waits until the element <code>locator\x3c/code> disappears from the current page.\x3c/p>","*${overlay}    timeout=15s","*Enter Username","*${CORRECT_EMAIL}","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${txt_loginUserName}    ${USERNAME}","*Typing text 'rohan_kadu@onwardgroup.com' into text field '<a href=\"xpath://*[@data-testid='email-input\">xpath://*[@data-testid='email-input\x3c/a>']'.","*Enter Password","*${CORRECT_PASSWORD}","*${txt_loginPassword}    ${PASSWORD}","*Typing text '0}Av|55#N27=' into text field '<a href=\"xpath://*[@data-testid='password-input\">xpath://*[@data-testid='password-input\x3c/a>']'.","*Click Login Button","*Click Button","*<p>Clicks the button identified by <code>locator\x3c/code>.\x3c/p>","*${btn_login}","*Clicking button '<a href=\"xpath://button[@type='submit\">xpath://button[@type='submit\x3c/a>']'.","*Sleep","*BuiltIn","*<p>Pauses the test executed for the given time.\x3c/p>","*10","*Slept 10 seconds.","*isCurrentUrlCorrect","*${EXPECTED_URL}","*Get Location","*<p>Returns the current browser window URL.\x3c/p>","*${CURRENT_URL}","*${CURRENT_URL} = <a href=\"https://otl-qa.arrayviewpoint.fellowes.com/admin/\">https://otl-qa.arrayviewpoint.fellowes.com/admin/\x3c/a>","*Should Be Equal","*<p>Fails if the given objects are unequal.\x3c/p>","*${CURRENT_URL}    ${EXPECTED_URL}","*To Verify Subscription Plan Changes Successfully","*Element '<a href=\"xpath://*[contains(@class,'Toastify__toast-body\">xpath://*[contains(@class,'Toastify__toast-body\x3c/a>')]' not visible after 10 seconds.","*Click Change Subscription Button","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*${btn_changeSubscription}    timeout=10s","*${btn_changeSubscription}","*Clicking button '<a href=\"xpath://*[@data-testid='change-subscription-button\">xpath://*[@data-testid='change-subscription-button\x3c/a>']'.","*Click Subscription Plan Dropdown","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${dropdown_selectPlan}","*Clicking element '<a href=\"xpath://*[@class='select-search-value\">xpath://*[@class='select-search-value\x3c/a>']'.","*Select Subscription Plan From Dropdown","*${option_subscriptionPlan}","*Clicking element '<a href=\"xpath://*[@data-index='3\">xpath://*[@data-index='3\x3c/a>']'.","*Click Confirm Button","*${btn_confirm}","*Clicking button '<a href=\"xpath://button[normalize-space()='Confirm\">xpath://button[normalize-space()='Confirm\x3c/a>']'.","*Wait For Toaster Message to be Visible","*${toaster_message}    timeout=10s","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-90.png\"><img src=\"selenium-screenshot-90.png\" width=\"800px\">\x3c/a>","*Wait For Toaster Message to be Disappear","*To Verify Devices Tab is loaded Successfully","*Click Devices tab","*${tab_devices}","*Clicking element '<a href=\"xpath://*[@data-testid='devices-tab\">xpath://*[@data-testid='devices-tab\x3c/a>']'.","*isDevicesListPresent","*Run Keyword And Return Status","*<p>Runs the given keyword with given arguments and returns the status as a Boolean value.\x3c/p>","*Element Should Be Visible    ${devices_table}","*${DEVICES_PRESENT}","*Element Should Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is visible.\x3c/p>","*${devices_table}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-91.png\"><img src=\"selenium-screenshot-91.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//*[contains (@class,'DevicesTablestyles__StyledContainer')]' not found.","*${DEVICES_PRESENT} = False","*Page Should Contain    No devices found","*${NO_DEVICES_PRESENT}","*Page Should Contain","*<p>Verifies that current page contains <code>text\x3c/code>.\x3c/p>","*No devices found","*Current page contains text 'No devices found'.","*${NO_DEVICES_PRESENT} = True","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*✅ Devices list is visible","*ℹ️ No devices found message is visible","*Fail","*<p>Fails the test with the given message and optionally alters its tags.\x3c/p>","*❌ Neither devices list nor 'No devices found' message appeared","*To Verify Users Tab is loaded Successfully","*Click Users tab","*${tab_users}","*Clicking element '<a href=\"xpath://*[@data-testid='users-tab\">xpath://*[@data-testid='users-tab\x3c/a>']'.","*isActiveUsersLabelVisible","*${ACTIVE_USERS}","*Get Text","*<p>Returns the text value of the element identified by <code>locator\x3c/code>.\x3c/p>","*${lbl_active_users}","*${TEXT_ACTIVE_USERS}","*${TEXT_ACTIVE_USERS} = Active Users","*Should Be Equal As Strings","*<p>Fails if objects are unequal after converting them to strings.\x3c/p>","*${TEXT_ACTIVE_USERS}    ${ACTIVE_USERS}","*To Verify User Logged Out Successfully","*Click Admin Account Menu Dropdown","*${admin_account_menu}","*Clicking element '<a href=\"xpath://*[@data-testid='account-menu\">xpath://*[@data-testid='account-menu\x3c/a>']'.","*Click Admin Sign Out Option","*${option_admin_account_logout}","*Clicking element '<a href=\"xpath://*[@data-testid='logout-button\">xpath://*[@data-testid='logout-button\x3c/a>']'.","*${APP_URL}","eNpTqXYODQpy9QuJDw3yqVWwVbBJVMgoSk2zVcooKSkottLXzy/J0S1M1EssKkqsLMtMLS/Iz8wr0UtLzcnJL08t1kvOz9VPTMnNzNPPyU8Hkkp2ZGq00U+0AwD6DTMm","*Close My Browser","*Close All Browsers","*<p>Closes all open browsers and resets the browser cache.\x3c/p>","*AreasPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot","*../TestCases/AreasPageTest.robot","*LoginPageKeywords","*Opening browser 'chrome' to base url '<a href=\"https://otl-qa.arrayviewpoint.fellowes.com/login/\">https://otl-qa.arrayviewpoint.fellowes.com/login/\x3c/a>'.","*Typing text 'e-sdhepale@fellowes.com' into text field '<a href=\"xpath://*[@data-testid='email-input\">xpath://*[@data-testid='email-input\x3c/a>']'.","*Typing text 'Onward@2023' into text field '<a href=\"xpath://*[@data-testid='password-input\">xpath://*[@data-testid='password-input\x3c/a>']'.","*2","*Slept 2 seconds.","*To Verify Areas page is clickable and visible","*Click on Areas Page","*ViewpointNavigationBarKeywords","*${areas_page}","*Clicking element 'link=Areas'.","*isAreasSidebarTitleVisible","*AreasPageKeywords","*${areas_page_sidebar_title}","*Element '<a href=\"xpath://div[contains\">xpath://div[contains\x3c/a> (@class,'Sidebarstyles__StyledSidebarTitle')]' is displayed.","*5","*Slept 5 seconds.","*To Verify Graph Comparison is working on Areas Page","eNq1jLEKwjAQQH/l6JIExOzSFgdHwaGjlBKSKwmEu5Cctv69SL/B6S3vvXtqAluSCJm9E66gegex4jp0e3ESL9aG9H5qzyQuUdNXn11rJ3WrXAJv1OSTsS3L9GOYMKMXDI8iiUkZMx+94C7aDN34h2lv3QjqkNSsgFhg5ReF8xf+3E9o","*Wait Until Graph Canvas Is Visible","*DashboardPageKeywords","*${graph_canvas}","*scrollDownPage","*Execute Javascript","*<p>Executes the given JavaScript code with possible arguments.\x3c/p>","*window.scrollBy(0, 1000)","*Executing JavaScript:\nwindow.scrollBy(0, 1000)\nWithout any arguments.","*Click on Graph Comparison Dropdown","*${select_graph_comparison}","eNq1jEEKwjAQAL8SetkExNylLYLee+hRSlmS1QbjJjSLtr+v0jd4msvMXGJwz8APRZFexKKgRjXNdG+qJaNMJ2t9eN+0SywYuOizi1jKAa5zyj59uMgaqYxj/6Pvvxsn5LssITEYM+y90CLaNFX7h2ltsVWwSzDAcQOm90td","*${select_graph_comparison}    timeout=2s","*Select Building For Comparison By Index","*Select From List By Index","*<p>Selects options from selection list <code>locator\x3c/code> by <code>indexes\x3c/code>.\x3c/p>","*${select_graph_comparison}    1","eNq1jcEKgzAQRH9l8RKF0tBrUemh9x48FpHUrDWQ7obs0urfl+o39DQwzHvTYcRRAz2BkwYmgSnzC2SvmSAGUTC1gznj1BRLcjqfrfXhfS9HJnWBpLyM0YkczDVz8vwh0TWiDEP3S99tMvS37cFUVb/ziouWVVO0f5DW1rVg9pHpDTxWCORxgdPxC3DHVxM=","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-92.png\"><img src=\"selenium-screenshot-92.png\" width=\"800px\">\x3c/a>","*Verify All Metric Graphs","*Element with locator '<a href=\"xpath://*[@data-testid='close\">xpath://*[@data-testid='close\x3c/a>']' not found.","*${metric}    ${needs_drawer_close}    IN    @{METRICS_TO_VERIFY}","*${metric} = Air Quality, ${needs_drawer_close} = True","*Verify Metric Graph","*${metric}    ${needs_drawer_close}","*Run Keyword","*<p>Executes the given keyword with the given arguments.\x3c/p>","*Click On Metric Parameter    ${metric_name}","*Click On Metric Parameter","*${metric_name}","*Get From Dictionary","*Collections","*<p>Returns a value from the given <code>dictionary\x3c/code> based on the given <code>key\x3c/code>.\x3c/p>","*${METRIC_LOCATORS}    ${metric_name}","*${locator}","*${locator} = <a href=\"xpath://*[@data-testid='air-quality-chart-option\">xpath://*[@data-testid='air-quality-chart-option\x3c/a>' and contains(@class, 'ChartOptionstyles__StyledChartOption')]","*Clicking element '<a href=\"xpath://*[@data-testid='air-quality-chart-option\">xpath://*[@data-testid='air-quality-chart-option\x3c/a>' and contains(@class, 'ChartOptionstyles__StyledChartOption')]'.","*Run Keyword If","*<p>Runs the given keyword with the given arguments, if <code>condition\x3c/code> is true.\x3c/p>","*'${close_drawer}'=='${TRUE}'    Click on Close button of How is my Air Quality Calculated Drawer","*Click on Close button of How is my Air Quality Calculated Drawer","*${btn_close_how_is_my_air_quality_calculate_drawer}","*Clicking element '<a href=\"xpath://*[@data-testid='close\">xpath://*[@data-testid='close\x3c/a>']'.","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-93.png\"><img src=\"selenium-screenshot-93.png\" width=\"800px\">\x3c/a>","*Loop Through Time Ranges","*To Verify Given Area is available in list and Clickable","*Get Areas List","*${areas}","*${list_areas_name}    10s","*Get WebElements","*<p>Returns a list of WebElement objects matching the <code>locator\x3c/code>.\x3c/p>","*${list_areas_name}","*${elements}","*${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session=\"ba1873f2d82f593bc45cf1f63475d429\", element=\"f.DC63AF91D88823289F92195DDAE8A60D.d.A21C2125ABE7BCEDFF7DD2E15E379EF8.e.70\")&gt;, &lt;selenium.webdriv...","*Create List","*<p>Returns a list containing given items.\x3c/p>","*${areas} = []","*${el}    IN    @{elements}","*${el} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;ba1873f2d82f593bc45cf1f63475d429&quot;, element=&quot;f.DC63AF91D88823289F92195DDAE8A60D.d.A21C2125ABE7BCEDFF7DD2E15E379EF8.e.70&quot;)&gt;","*${el}","*${text}","*${text} = 1st Floor","*Append To List","*<p>Adds <code>values\x3c/code> to the end of <code>list\x3c/code>.\x3c/p>","*${areas}    ${text}","*${el} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;ba1873f2d82f593bc45cf1f63475d429&quot;, element=&quot;f.DC63AF91D88823289F92195DDAE8A60D.d.A21C2125ABE7BCEDFF7DD2E15E379EF8.e.71&quot;)&gt;","*${text} = 2nd Floor","*${el} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;ba1873f2d82f593bc45cf1f63475d429&quot;, element=&quot;f.DC63AF91D88823289F92195DDAE8A60D.d.A21C2125ABE7BCEDFF7DD2E15E379EF8.e.72&quot;)&gt;","*${text} = 3rd Floor","*${areas} = ['1st Floor', '2nd Floor', '3rd Floor']","*Click on Given Area","*${area_to_select}","*'${text}' == '${target_area_name}'    Run Keywords    Click Element    ${el}    AND    Exit For Loop","*CommunityDashboardTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot","*../TestCases/CommunityDashboardTest.robot","*Verify Successfull Login","*${page_title}","*Title Should Be","*<p>Verifies that the current page title equals <code>title\x3c/code>.\x3c/p>","*Page title is 'Dashboard'.","*To Verify Community Dashboard is Selected from Account Menu","*Click on Account Menu","*${user_account_menu}","*Clicking element '<a href=\"xpath://div[@data-testid='account-menu\">xpath://div[@data-testid='account-menu\x3c/a>']'.","*Select Community Dashboard from Account Menu","*${option_community_dashboard}","*Clicking element 'partial link=Community Dashboard'.","*To Verify Location is selected successfully","*Element with locator '#building-select-search' not found.","*Click on Select Building Dropdown","*CommunityDashboardKeywords","*${drp_select_building}","*Clicking element '#building-select-search'.","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-94.png\"><img src=\"selenium-screenshot-94.png\" width=\"800px\">\x3c/a>","*Select Building from Dropdown","*${building_to_select}","*Click on Select Floor Dropdown","*Select Floor from Dropdown","*${floor_to_select}","*Click on Select Area Dropdown","*Select Area from Dropdown","*DashboardPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot","*../TestCases/DashboardPageTest.robot","*To Verify Graph Comparison is working on Dashboard Page","*Element with locator '<a href=\"xpath://div[@data-testid='building-option\">xpath://div[@data-testid='building-option\x3c/a>' and text()='Fellowes Itasca']' not found.","*Click on Dashboard Page","*${dashboard_page}","*Clicking element 'link=Dashboard'.","*Click on Building Selection Dropdown","*${drp_building_selection}","*Clicking element '<a href=\"xpath://*[@data-testid='arrow_down\">xpath://*[@data-testid='arrow_down\x3c/a>']'.","*Select Given building from Building Dropdown","*<a href=\"xpath://div[@data-testid='building-option\">xpath://div[@data-testid='building-option\x3c/a>' and text()='${Building_to_be_select}']","*Clicking element '<a href=\"xpath://div[@data-testid='building-option\">xpath://div[@data-testid='building-option\x3c/a>' and text()='Fellowes Itasca']'.","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-95.png\"><img src=\"selenium-screenshot-95.png\" width=\"800px\">\x3c/a>","*To Verify Overview Section is visible","*isReplaceNowSectionVisible","*${replace_now_section}","*Element '<a href=\"xpath://div[text()='Replace\">xpath://div[text()='Replace\x3c/a> Now']' is displayed.","*isReplaceSoonSectionVisible","*${replace_soon_section}","*Element '<a href=\"xpath://div[text()='Replace\">xpath://div[text()='Replace\x3c/a> Soon']' is displayed.","*isDeviceOfflineSectionVisible","*${device_offline_section}","*Element '<a href=\"xpath://div[text()='Device\">xpath://div[text()='Device\x3c/a> Offline']' is displayed.","*To Verify Current Air Quality Label is Visible","*isCurrentAirQualityLabelVisible","*${lbl_current_air_quality_index}","*Element '<a href=\"xpath://div[contains\">xpath://div[contains\x3c/a> (@class,'AirIndexstyles__StyledTitle')]' is displayed.","*To Verify Current Air Quality Value is Visible","*isCurrentAirQualityValueVisible","*${current_air_quality_index_value}","*Element '<a href=\"xpath://div[contains\">xpath://div[contains\x3c/a> (@class,'AirIndexstyles__StyledAirIndexValue')]' is displayed.","*To Verify Current Air Quality Status is Visible","*isCurrentAirQualityStatusVisible","*${current_air_quality_index_status}","*Element '<a href=\"xpath://div[contains\">xpath://div[contains\x3c/a> (@class,'AirIndexstyles__StyledAirIndexStatus')]' is displayed.","*To Verify PM2.5 Title is Visible","*isPM25TitleVisible","*${pm25_title}","*Set Variable","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","eNqzSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZR900tKcpMDi7NzU0sqiwuqcxJLY6PDwbRKSGZJTmp6pqasfr6KZll0SWpFSUamrbqKtUlIIn4glwjUyU72plto59oV6seCwBa90YX","*${pm_25_metric_summary_title}","eNpTqS7IjTcyjc9NLSnKTI4vLs3NTSyqjC/JLMlJrVWwVbBJVMgoSk2zVaooSCzJsNLX14rWSM7PK0nMzCvWcEjOSSwu1lH3BWsOhugtLqnMSS2Ojw8G0SkhIIPUNTVj9fVTMsuiS1IrSjQ0bdUDfJXsqG2ijX6inYKRnql6LAAObUrO","eNqtzLEKwjAQANBfCV3SiDQguEhbXBwLQt1KKUdy0oMkltwpzd+L/+D0tncLGDGJ0i2oNeOzq/YNZL1Ye5hq90oClLi+ugDMRz2gZHLjO0bIhaUE5GUZf/oHSUBtzGytp88kuEttOn0fqv7fY2uhV6fmrGetiJUn3gIU9M0X/i1HAg==","*To Verify TVOC Title is Visible","*isTVOCTitleVisible","*${tvoc_title}","eNqzSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZR900tKcpMDi7NzU0sqiwuqcxJLY6PDwbRKSGZJTmp6pqasfr6KZll0SWpFSUamrbqKtUlIIn4krL8ZCU72plto59oV6seCwCOTUcH","*${tvoc_metric_summary_title}","eNpTqS4py0+Oz00tKcpMji8uzc1NLKqML8ksyUmtVbBVsElUyChKTbNVqihILMmw0tfXitZIzs8rSczMK9ZwSM5JLC7WUfcFaw6G6C0uqcxJLY6PDwbRKSEgg9Q1NWP19VMyy6JLUitKNDRt1UPC/J2V7Khvpo1+op16LAAdJ0tw","eNqtzLEKwjAQANBfCV0uETG7tEWQjuLQ4lJKOZqTBpJYcqc0fy/+g9PbXhcoUhIFNao107Op9g1lPVt7GPXySoI+sb4sAZmPcCPJfunfMWIuLCUQz3P/0w1eAoExk7XOf0ahXbRpYHjcr1X7/7O22MIEyrNynreAhdzpCwKmR4s=","*To Verify CO2 Title is Visible","*isCO2TitleVisible","*${co2_title}","eNqzSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZR900tKcpMDi7NzU0sqiwuqcxJLY6PDwbRKSGZJTmp6pqasfr6KZll0SWpFSUamrbqKtUlIIl4Z38jJTuaGW2jn2hXqx4LAL2fRRc=","*${CO2_metric_summary_title}","eNpTqXb2N4rPTS0pykyOLy7NzU0sqowvySzJSa1VsFWwSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZR9wVrDoboLS6pzEktjo8PBtEpISCD1DU1Y/X1UzLLoktSK0o0NG3Vnf0fNTUp2dHAUBv9RDv1WABCkEzw","eNq1zLEKwjAQANBfCV2Siphd2iKIozjUrZRyJCc9SGLJndKs/VS/RPwIp7e9S8CISZRuQM0ZH221LiDz0drdYNwzCVBic3IBmPf6ipLJ9a8YIReWEpCnqf/p7yQBdV2P1np6D4KrmLrV59tn26ruD2ljodOjVsTKEy8BCvrDFwf2SgM=","*To Verify History Title is Visible","*isHistoryTitleVisible","*${history_title}","eNqzSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZRd85ILCopLi6pzEktjo8PBtEpIZklOanOEJWpReqamrH6+imZZdElqRUlGpq26h6ZxSX5RZVKdjQy2EY/0U49FgCXB0Qi","eNpTqc7ILC7JL6qML8ksyUmtVbBVsElUyChKTbNVqihILMmw0tfXitZIzs8rSczMK9ZwSM5JLC7WUXfOSCwqKS4uqcxJLY6PDwbRKSEgE5whKlOL1DU1Y/X1UzLLoktSK0o0NG3VPSA2KdnRyGAb/UQ79VgAPQJLTg==","eNq1zEEKwjAQQNGrhG4mETF7aYtQBPe6K6UMzUgGYloygzS3F/EMrv7m8a+JXpTVQIsmFnp2zb6hxrP3h9Eua1bkLPayJBQ5whCxqIjWRDLP92/DgzXR8JNUwLnJ+8DvUWlX6zq4sehaatP/adx67GECw2ICy5awUjh9AESQTGM=","*DevicesListPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DevicesListPageTest.robot","*../TestCases/DevicesListPageTest.robot","*To Verify Successfully Login","*To Verify Devices tab is visible and clickable in Navigation Bar","*Click on Devices Page","*${devices_page}","*Clicking element 'link=Devices'.","*GraphDataValidation","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot","*../TestCases/GraphDataValidation.robot","*Validate Dynamic Sensor Data On Graph","*No keyword with name 'Create Session' found.","*Capture And Validate Sensor API Data","*Create Session","*sensor    ${API_BASE}    headers=${HEADERS}    verify=False","*GET On Session","*sensor    ${ENDPOINT}","*${response}","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${response.status_code}    200","*${response.json()}","*${json}","*${entry}    IN    @{json}","*${entry} = ","*${entry}    value","*${value}","*Air Quality values: ${value}","*Should Be True","*<p>Fails if the given condition is not true.\x3c/p>","*${value} &gt;= 0","*${value} &lt;= 100","*GraphDataValidationDynamicAPI","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot","*../TestCases/GraphDataValidationDynamicAPI.robot","*Variable '${USERNAME}' not found.","*Login To Application","*${API_BASE_URL}    ${TEST_BROWSER}","*Opening browser 'chrome' to base url '<a href=\"https://otl-qa.api.arrayviewpoint.net\">https://otl-qa.api.arrayviewpoint.net\x3c/a>'.","*<a href=\"xpath://*[@data-testid=&quot;email-input\">xpath://*[@data-testid=\"email-input\x3c/a>\"]    ${USERNAME}","*<a href=\"xpath://*[@data-testid=&quot;password-input\">xpath://*[@data-testid=\"password-input\x3c/a>\"]    ${PASSWORD}","*<a href=\"xpath://*[@data-testid=&quot;button\">xpath://*[@data-testid=\"button\x3c/a>\"]","*<a href=\"xpath://div[contains(@class\">xpath://div[contains(@class\x3c/a>, \"NavBarstyles__NavMenuWrapper\")]//a[@href='/']","*${Get_Dashboard}","*${Get_Dashboard}    Dashboard","*3","*Get X And Y Axis From Canvas","eNq1UcFOwkAQvfMVc6se6Aa49WYUqYliA8TEE5m2A13Z7qyzW0z9erfISblynDd57817MxdhAW1hpw1BohpuSe3Rkm9U0VcNSlsIf1AVvFrokHflA/lDYLctBKugKzqv1eJE2hYkni2a7YpLDityvF7nSoZhJ9jSF8vBnalqQz7co6eoLeiaBwz4hkbXGDTb9ERKgC0YbQlmGTy1jiVou49IKSg9JCv67KKKf/4FEthhTFJn8MJ1Z2jJ4ZE7W8+HnBksGdoTDjbeUv+njzbxNiqxOsBNyz6AUEU2QIXGgEEfbrMRRBlLo+J9k78ui7tNPkDXai49kj2qUtsrelz+zmDYeVGxauX60LCdTabpt3YXFulkehkdxnHdW8NYX72lP9ZeBxq7+Erck/8B7kIQKQ==","eNq1UbFuwjAQ3fmK29IOxAK2bKhQgtTSCKJKndDFOYiL43Nthyr9+jq0U8vKeO/03rv3bukcO1AGDkoTJKLhlsQRDflGFL1s0LWF43eSwYuVCnlXLcifAtt94VAGJel3LVYX0r4g59mg3m+54rAly7tdLtwwHBy29MnuZH+poiQfHtBT1HZomwUGfEWtagyKzaI32Co5L9bphZ4AG9DKEMwyWLeWXVDmGJHKoesh2dJHF/X80w+QwAFjpjqDZ647TRsOj9yZejkkzmDD0F5wiC5U/6ePynglVShPcNeyD+BIkgkgUWvQ6MN9NoIoY2hUvJX5y6aYl/kA3arD9EzmLCplbuhx/U+DYeediFUL24eGzWwyTb+UvbJIJ9Pr6DCO695oxvrmLf2x9irQ2MZX4pH8N64KE8g="]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:10","fail":27,"label":"All Tests","pass":0,"skip":0}],[{"combined":"NOT robot:exit","elapsed":"00:00:10","fail":1,"info":"combined","label":"NOT robot:exit","pass":0,"skip":0}],[{"elapsed":"00:00:10","fail":27,"id":"s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","name":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","pass":0,"skip":0},{"elapsed":"00:00:10","fail":5,"id":"s1-s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AdminLoginTest","name":"AdminLoginTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":5,"id":"s1-s2","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AreasPageTest","name":"AreasPageTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":3,"id":"s1-s3","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.CommunityDashboardTest","name":"CommunityDashboardTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":10,"id":"s1-s4","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DashboardPageTest","name":"DashboardPageTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":2,"id":"s1-s5","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DevicesListPageTest","name":"DevicesListPageTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":1,"id":"s1-s6","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidation","name":"GraphDataValidation","pass":0,"skip":0},{"elapsed":"00:00:00","fail":1,"id":"s1-s7","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidationDynamicAPI","name":"GraphDataValidationDynamicAPI","pass":0,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:01:36","fail":7,"label":"All Tests","pass":20,"skip":0}],[],[{"elapsed":"00:01:36","fail":7,"id":"s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","name":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","pass":20,"skip":0},{"elapsed":"00:00:26","fail":1,"id":"s1-s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AdminLoginTest","name":"AdminLoginTest","pass":4,"skip":0},{"elapsed":"00:00:17","fail":2,"id":"s1-s2","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AreasPageTest","name":"AreasPageTest","pass":3,"skip":0},{"elapsed":"00:00:23","fail":1,"id":"s1-s3","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.CommunityDashboardTest","name":"CommunityDashboardTest","pass":2,"skip":0},{"elapsed":"00:00:13","fail":1,"id":"s1-s4","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DashboardPageTest","name":"DashboardPageTest","pass":9,"skip":0},{"elapsed":"00:00:11","fail":0,"id":"s1-s5","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DevicesListPageTest","name":"DevicesListPageTest","pass":2,"skip":0},{"elapsed":"00:00:00","fail":1,"id":"s1-s6","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidation","name":"GraphDataValidation","pass":0,"skip":0},{"elapsed":"00:00:06","fail":1,"id":"s1-s7","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidationDynamicAPI","name":"GraphDataValidationDynamicAPI","pass":0,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["errors"] = [[158,3,16,15]];
+window.output["errors"] = [[89790,4,364],[89810,4,365]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1775210932796;
+window.output["baseMillis"] = 1776339324311;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 9897;
-=======
-window.output["strings"] = window.output["strings"].concat(["*","eNp1yzEKg0AQRuGrWOUSVksWRLCwkPR/dgcdyMwuO5OAt7cTEdK+jxeysE5lZV3IvHtAat+FRrAZK13as4h8lX2PsO1d0PIFz3abIv04kU1sfpOhoW4Rjhc+nOFc9L/EXSGcwjwesOE/YQ==","*AdminLoginTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AdminLoginTest.robot","*../TestCases/AdminLoginTest.robot","*To Verify Successfull Login","*Evaluating expression \"__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()\" failed: TypeError: 'module' object is not callable","*Load .env Variables","*AdminLoginKeywords","*Evaluate","*BuiltIn","*<p>Evaluates the given expression in Python and returns the result.\x3c/p>","*__import__('Resources.LoadDotenvVariables').LoadDotenvVariables()","*${dotenv}","*${dotenv}.set_env_variables_as_robot_variables()","*${None}","*Open My Browser","*${APP_URL}    ${TEST_BROWSER}","*Wait For Overlay To Disappear","*Enter Username","*${CORRECT_EMAIL}","*Enter Password","*${CORRECT_PASSWORD}","*Click Login Button","*Sleep","*<p>Pauses the test executed for the given time.\x3c/p>","*10","*isCurrentUrlCorrect","*${EXPECTED_URL}","*To Verify Subscription Plan Changes Successfully","*No browser is open.","*Wait Until Page Does Not Contain Element","*SeleniumLibrary","*<p>Waits until the element <code>locator\x3c/code> disappears from the current page.\x3c/p>","*${overlay}    timeout=15s","*Cannot capture screenshot because no browser is open.","*Click Change Subscription Button","*Click Subscription Plan Dropdown","*Select Subscription Plan From Dropdown","*Click Confirm Button","*Wait For Toaster Message to be Visible","*isToasterMessageCorrect","*${EXPECTED_SUCCESS_MESSAGE}","*Wait For Toaster Message to be Disappear","*To Verify Devices Tab is loaded Successfully","*Click Devices tab","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${tab_devices}","*Clicking element '<a href=\"xpath://*[@data-testid='devices-tab\">xpath://*[@data-testid='devices-tab\x3c/a>']'.","*isDevicesListPresent","*To Verify Users Tab is loaded Successfully","*Click Users tab","*${tab_users}","*Clicking element '<a href=\"xpath://*[@data-testid='users-tab\">xpath://*[@data-testid='users-tab\x3c/a>']'.","*isActiveUsersLabelVisible","*${ACTIVE_USERS}","*To Verify User Logged Out Successfully","*Click Admin Account Menu Dropdown","*${admin_account_menu}","*Clicking element '<a href=\"xpath://*[@data-testid='account-menu\">xpath://*[@data-testid='account-menu\x3c/a>']'.","*Click Admin Sign Out Option","*${APP_URL}","*Close My Browser","*AreasPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot","*../TestCases/AreasPageTest.robot","*Variable '${APP_URL}' not found.","*LoginPageKeywords","*2","*To Verify Areas page is clickable and visible","*Click on Areas Page","*ViewpointNavigationBarKeywords","*${areas_page}","*Clicking element 'link=Areas'.","*isAreasSidebarTitleVisible","*AreasPageKeywords","*5","*To Verify Graph Comparison is working on Areas Page","*Wait Until Graph Canvas Is Visible","*DashboardPageKeywords","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*${graph_canvas}","*scrollDownPage","*Click on Graph Comparison Dropdown","*Select Building For Comparison By Index","*Verify All Metric Graphs","*${metric}    ${needs_drawer_close}    IN    @{METRICS_TO_VERIFY}","*${metric} = Air Quality, ${needs_drawer_close} = True","*Verify Metric Graph","*${metric}    ${needs_drawer_close}","*Run Keyword","*<p>Executes the given keyword with the given arguments.\x3c/p>","*Click On Metric Parameter    ${metric_name}","*Click On Metric Parameter","*${metric_name}","*Get From Dictionary","*Collections","*<p>Returns a value from the given <code>dictionary\x3c/code> based on the given <code>key\x3c/code>.\x3c/p>","*${METRIC_LOCATORS}    ${metric_name}","*${locator}","*${locator} = <a href=\"xpath://*[@data-testid='air-quality-chart-option\">xpath://*[@data-testid='air-quality-chart-option\x3c/a>' and contains(@class, 'ChartOptionstyles__StyledChartOption')]","*Clicking element '<a href=\"xpath://*[@data-testid='air-quality-chart-option\">xpath://*[@data-testid='air-quality-chart-option\x3c/a>' and contains(@class, 'ChartOptionstyles__StyledChartOption')]'.","*Run Keyword If","*<p>Runs the given keyword with the given arguments, if <code>condition\x3c/code> is true.\x3c/p>","*'${close_drawer}'=='${TRUE}'    Click on Close button of How is my Air Quality Calculated Drawer","*Loop Through Time Ranges","*To Verify Occupancy Graph","*Click on Occupancy Parameter in Metrics Tab","*${metrics_occupancy_parameter}","*Clicking element '<a href=\"xpath://*[@data-testid='occupancy-chart-option\">xpath://*[@data-testid='occupancy-chart-option\x3c/a>']'.","*${param}    IN    @{COMPARISON_PARAMS}","*${param} = ","*Select Comparison Parameter in Occupancy Graph","*${param}","*To Verify Given Area is available in list and Clickable","*Get Areas List","*${areas}","*${list_areas_name}    10s","*Get WebElements","*<p>Returns a list of WebElement objects matching the <code>locator\x3c/code>.\x3c/p>","*${list_areas_name}","*${elements}","*Create List","*<p>Returns a list containing given items.\x3c/p>","*${el}    IN    @{elements}","*${el} = ","*Get Text","*<p>Returns the text value of the element identified by <code>locator\x3c/code>.\x3c/p>","*${el}","*${text}","*Append To List","*<p>Adds <code>values\x3c/code> to the end of <code>list\x3c/code>.\x3c/p>","*${areas}    ${text}","*Click on Given Area","*${area_to_select}","*CommunityDashboardTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot","*../TestCases/CommunityDashboardTest.robot","*Verify Successfull Login","*${page_title}","*To Verify Community Dashboard is Selected from Account Menu","*Click on Account Menu","*${user_account_menu}","*Clicking element '<a href=\"xpath://div[@data-testid='account-menu\">xpath://div[@data-testid='account-menu\x3c/a>']'.","*Select Community Dashboard from Account Menu","*To Verify Location is selected successfully","*Click on Select Building Dropdown","*CommunityDashboardKeywords","*${drp_select_building}","*Clicking element 'id:building-select-search'.","*Select Building from Dropdown","*${building_to_select}","*Click on Select Floor Dropdown","*Select Floor from Dropdown","*${floor_to_select}","*Click on Select Area Dropdown","*Select Area from Dropdown","*DashboardPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot","*../TestCases/DashboardPageTest.robot","*To Verify Graph Comparison is working on Dashboard Page","*Click on Dashboard Page","*${dashboard_page}","*Clicking element 'link=Dashboard'.","*Click on Building Selection Dropdown","*Select Given building from Building Dropdown","*To Verify See More Link is Visible","*isSeeMoreLinkVisible","*${see_more_link}    timeout=5s","*Element Should Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is visible.\x3c/p>","*${see_more_link}","*To Verify See All Areas Link is Visible","*isSeeAllAreasLinkVisible","*${see_all_areas_link}","*To Verify Current Air Quality Label is Visible","*isCurrentAirQualityLabelVisible","*${lbl_current_air_quality_index}","*To Verify Current Air Quality Value is Visible","*isCurrentAirQualityValueVisible","*${current_air_quality_index_value}","*To Verify Current Air Quality Status is Visible","*isCurrentAirQualityStatusVisible","*${current_air_quality_index_status}","*To Verify PM2.5 Title is Visible","*isPM25TitleVisible","*${pm25_title}","*Set Variable","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*<a href=\"xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\">xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\x3c/a>') and text()='${title_pm25}')]","*${pm_25_metric_summary_title}","*${pm_25_metric_summary_title} = <a href=\"xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\">xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\x3c/a>') and text()='PM 2.5')]","*To Verify TVOC Title is Visible","*isTVOCTitleVisible","*${tvoc_title}","*<a href=\"xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\">xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\x3c/a>') and text()='${title_tvoc}')]","*${tvoc_metric_summary_title}","*${tvoc_metric_summary_title} = <a href=\"xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\">xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\x3c/a>') and text()='TVOC')]","*To Verify CO2 Title is Visible","*isCO2TitleVisible","*${co2_title}","eNqzSVTIKEpNs1WqKEgsybDS19eK1kjOzytJzMwr1nBIzkksLtZR900tKcpMDi7NzU0sqiwuqcxJLY6PDwbRKSGZJTmpSnaU6LbRT7RT11RIzEtRKEmtKNHQtFVXqS4BycQ7+xvVqmvGAgBSajsB","*${CO2_metric_summary_title}","*${CO2_metric_summary_title} = <a href=\"xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\">xpath://*[(contains(@class,'MetricSummarystyles__StyledTitle\x3c/a>') and text()='CO₂')]","*To Verify History Title is Visible","*isHistoryTitleVisible","*${history_title}","*<a href=\"xpath://*[(contains(@class,'Chartsstyles__StyledHeader\">xpath://*[(contains(@class,'Chartsstyles__StyledHeader\x3c/a>') and text()='${title_history}')]","*${history_title} = <a href=\"xpath://*[(contains(@class,'Chartsstyles__StyledHeader\">xpath://*[(contains(@class,'Chartsstyles__StyledHeader\x3c/a>') and text()='History')]","*DevicesListPageTest","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DevicesListPageTest.robot","*../TestCases/DevicesListPageTest.robot","*To Verify Successfully Login","*Open Browser","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${URL}    ${BROWSER}","*Opening browser 'chrome' to base url '<a href=\"https://otl-qa.arrayviewpoint.fellowes.com/login/\">https://otl-qa.arrayviewpoint.fellowes.com/login/\x3c/a>'.","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${txt_loginUserName}    ${USERNAME}","*Typing text 'e-sdhepale@fellowes.com' into text field '<a href=\"xpath://*[@data-testid='email-input\">xpath://*[@data-testid='email-input\x3c/a>']'.","*${txt_loginPassword}    ${PASSWORD}","*Typing text 'Onward@2023' into text field '<a href=\"xpath://*[@data-testid='password-input\">xpath://*[@data-testid='password-input\x3c/a>']'.","*Click Button","*<p>Clicks the button identified by <code>locator\x3c/code>.\x3c/p>","*${btn_login}","*Clicking button '<a href=\"xpath://button[@type='submit\">xpath://button[@type='submit\x3c/a>']'.","*Slept 5 seconds.","*Title Should Be","*<p>Verifies that the current page title equals <code>title\x3c/code>.\x3c/p>","*Page title is 'Dashboard'.","*To Verify Devices tab is visible and clickable in Navigation Bar","*Click on Devices Page","*${devices_page}","*Clicking element 'link=Devices'.","*GraphDataValidation","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot","*../TestCases/GraphDataValidation.robot","*Validate Dynamic Sensor Data On Graph","*No keyword with name 'Create Session' found.","*Capture And Validate Sensor API Data","*Create Session","*sensor    ${API_BASE}    headers=${HEADERS}    verify=False","*GET On Session","*sensor    ${ENDPOINT}","*${response}","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${response.status_code}    200","*${response.json()}","*${json}","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*${entry}    IN    @{json}","*${entry} = ","*${entry}    value","*${value}","*Air Quality values: ${value}","*Should Be True","*<p>Fails if the given condition is not true.\x3c/p>","*${value} &gt;= 0","*${value} &lt;= 100","*GraphDataValidationDynamicAPI","*/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot","*../TestCases/GraphDataValidationDynamicAPI.robot","*Variable '${BROWSER}' not found.","*Login To Application","*${API_BASE_URL}    ${BROWSER}","*<a href=\"xpath://*[@data-testid=&quot;email-input\">xpath://*[@data-testid=\"email-input\x3c/a>\"]    ${USERNAME}","*<a href=\"xpath://*[@data-testid=&quot;password-input\">xpath://*[@data-testid=\"password-input\x3c/a>\"]    ${PASSWORD}","*<a href=\"xpath://*[@data-testid=&quot;button\">xpath://*[@data-testid=\"button\x3c/a>\"]","*<a href=\"xpath://div[contains(@class\">xpath://div[contains(@class\x3c/a>, \"NavBarstyles__NavMenuWrapper\")]//a[@href='/']","*${Get_Dashboard}","*Should Be Equal As Strings","*<p>Fails if objects are unequal after converting them to strings.\x3c/p>","*${Get_Dashboard}    Dashboard","*3","*Get X And Y Axis From Canvas","*Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/AreasPageTest.robot' on line 4: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.","*Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/CommunityDashboardTest.robot' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.","*Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/DashboardPageTest.robot' on line 4: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.","eNq1UcFOwkAQvfMVc6se6Aa49WYUqYliA8TEE5m2A13Z7qyzW0z9erfISblynDd57817MxdhAW1hpw1BohpuSe3Rkm9U0VcNSlsIf1AVvFrokHflA/lDYLctBKugKzqv1eJE2hYkni2a7YpLDityvF7nSoZhJ9jSF8vBnalqQz7co6eoLeiaBwz4hkbXGDTb9ERKgC0YbQlmGTy1jiVou49IKSg9JCv67KKKf/4FEthhTFJn8MJ1Z2jJ4ZE7W8+HnBksGdoTDjbeUv+njzbxNiqxOsBNyz6AUEU2QIXGgEEfbrMRRBlLo+J9k78ui7tNPkDXai49kj2qUtsrelz+zmDYeVGxauX60LCdTabpt3YXFulkehkdxnHdW8NYX72lP9ZeBxq7+Erck/8B7kIQKQ==","*Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidation.robot' on line 6: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found.","eNq1UbFuwjAQ3fmK29IOxAK2bKhQgtTSCKJKndDFOYiL43Nthyr9+jq0U8vKeO/03rv3bukcO1AGDkoTJKLhlsQRDflGFL1s0LWF43eSwYuVCnlXLcifAtt94VAGJel3LVYX0r4g59mg3m+54rAly7tdLtwwHBy29MnuZH+poiQfHtBT1HZomwUGfEWtagyKzaI32Co5L9bphZ4AG9DKEMwyWLeWXVDmGJHKoesh2dJHF/X80w+QwAFjpjqDZ647TRsOj9yZejkkzmDD0F5wiC5U/6ePynglVShPcNeyD+BIkgkgUWvQ6MN9NoIoY2hUvJX5y6aYl/kA3arD9EzmLCplbuhx/U+DYeediFUL24eGzWwyTb+UvbJIJ9Pr6DCO695oxvrmLf2x9irQ2MZX4pH8N64KE8g=","*Error in file '/home/ganesh/PycharmProjects/GitHubDesktop_PracticeProject/Ganesh_Personal_RobotRepoSSH/robotframeworkpractice/TestCases/GraphDataValidationDynamicAPI.robot' on line 5: Replacing variables from setting 'Variables' failed: Variable '${ENV_FILE}' not found."]);
-</script>
-<script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:14","fail":27,"label":"All Tests","pass":2,"skip":0}],[],[{"elapsed":"00:00:15","fail":27,"id":"s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","name":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI","pass":2,"skip":0},{"elapsed":"00:00:00","fail":5,"id":"s1-s1","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AdminLoginTest","name":"AdminLoginTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":6,"id":"s1-s2","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.AreasPageTest","name":"AreasPageTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":3,"id":"s1-s3","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.CommunityDashboardTest","name":"CommunityDashboardTest","pass":0,"skip":0},{"elapsed":"00:00:00","fail":11,"id":"s1-s4","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DashboardPageTest","name":"DashboardPageTest","pass":0,"skip":0},{"elapsed":"00:00:14","fail":0,"id":"s1-s5","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.DevicesListPageTest","name":"DevicesListPageTest","pass":2,"skip":0},{"elapsed":"00:00:00","fail":1,"id":"s1-s6","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidation","name":"GraphDataValidation","pass":0,"skip":0},{"elapsed":"00:00:00","fail":1,"id":"s1-s7","label":"AdminLoginTest &amp; AreasPageTest &amp; CommunityDashboardTest &amp; DashboardPageTest &amp; DevicesListPageTest &amp; GraphDataValidation &amp; GraphDataValidationDynamicAPI.GraphDataValidationDynamicAPI","name":"GraphDataValidationDynamicAPI","pass":0,"skip":0}]];
-</script>
-<script type="text/javascript">
-window.output["errors"] = [[217,4,282],[255,4,283],[264,4,284],[14710,4,285],[14711,4,286],[14716,4,287],[14716,4,288]];
-</script>
-<script type="text/javascript">
-window.output["baseMillis"] = 1775737721435;
-</script>
-<script type="text/javascript">
-window.output["generated"] = 14744;
->>>>>>> Stashed changes
+window.output["generated"] = 96162;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -1854,7 +2102,7 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
 </script>
 <title></title>
 </head>
-<body>
+<body data-theme="dark">
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -1864,12 +2112,13 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
-
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
+    storage.init();
+    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -1877,6 +2126,7 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
+    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -1917,25 +2167,6 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
-        highlightLinkTarget();
-    }
-}
-
-function highlightLinkTarget() {
-    if (window.location.hash) {
-        var target = $(window.location.hash);
-        highlight(target);
-    }
-}
-
-function highlight(element, color) {
-    if (color === undefined)
-        color = 242;
-    if (color < 255) {
-        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
-        setTimeout(function () { highlight(element, color+1); }, 300);
-    } else {
-        element.css({'background-color': ''});
     }
 }
 
@@ -1953,7 +2184,6 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
-            highlightLinkTarget();
         }
     });
 }
@@ -1977,7 +2207,7 @@ function addExecutionLog(main) {
 
 <script type="text/x-jquery-tmpl" id="tagStatisticsRowTemplate">
   <tr class="row-${$item.index}">
-    <td class="stats-col-name" title="{{html doc}}">
+    <td class="stats-col-name" title="${doc}">
       <div class="stat-name">
         <span>{{html label}}</span>
         {{if info}}(${info}){{/if}}
@@ -2151,8 +2381,9 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span>{{html assign}}</span>
+        <span class="assign">{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
+        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2186,6 +2417,12 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
+        {{if message()}}
+        <tr>
+          <th>Message:</th>
+          <td class="message">{{html message()}}</td>
+        </tr>
+        {{/if}}
       </table>
     </div>
   </div>
@@ -2208,6 +2445,7 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
+      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

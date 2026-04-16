@@ -108,5 +108,5 @@ isCurrentUrlCorrect
 
 
 Load .env Variables
-    ${dotenv}=    Evaluate    __import__('Resources.LoadDotenvVariables').LoadDotenvVariables()
+    ${dotenv}=    Evaluate    __import__('Resources.LoadDotenvVariables', fromlist=['DotenvVariables']).DotenvVariables()
     ${None}=    Evaluate    ${dotenv}.set_env_variables_as_robot_variables()

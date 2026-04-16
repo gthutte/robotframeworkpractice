@@ -22,7 +22,7 @@ ${history_title}    History
 
 *** Test Cases ***
 To Verify Successfull Login
-    Load .env Variables
+#    Load .env Variables
     Open My Browser     ${APP_URL}  ${TEST_BROWSER}
     Wait For Overlay To Disappear
     Enter Username      ${CORRECT_EMAIL}
