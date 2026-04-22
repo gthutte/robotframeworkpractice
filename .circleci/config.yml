@@ -14,35 +14,33 @@ jobs:
 
       - restore_cache:
           keys:
-            - v1-deps-{{ checksum "robotframeworkpractice/requirements.txt" }}
+            - v1-deps-{{ checksum "requirements.txt" }}
 
       - run:
           name: Install dependencies
           command: |
             python -m venv .venv
             . .venv/bin/activate
-            cd robotframeworkpractice
             pip install --upgrade pip
             pip install -r requirements.txt
 
       - save_cache:
           paths:
             - ~/.cache/pip
-          key: v1-deps-{{ checksum "robotframeworkpractice/requirements.txt" }}
+          key: v1-deps-{{ checksum "requirements.txt" }}
 
       - run:
           name: Run Robot Framework tests (QA)
           command: |
             . .venv/bin/activate
-            cd robotframeworkpractice
             make test-qa
 
       - store_artifacts:
-          path: robotframeworkpractice/Results
+          path: Results
           destination: results
 
       - store_test_results:
-          path: robotframeworkpractice/Results
+          path: Results
 
 workflows:
   test:
