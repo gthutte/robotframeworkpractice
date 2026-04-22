@@ -1,6 +1,5 @@
 # created by virtualenv automatically
-*
-.venv/
+*.venv/
 # Ignore PyCharm project settings
 .idea/
 
@@ -12,10 +11,11 @@ __pycache__/
 selenium-screenshot-*.png
 
 # Robot Framework generated files
+Results/
 output.xml
 report.html
 log.html
-Results/
+
 
 # Ignore environment variable files
 .env.qa
